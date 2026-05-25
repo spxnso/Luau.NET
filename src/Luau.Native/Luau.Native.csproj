@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- Native P/Invoke references and runtime libraries -->
+  <ItemGroup>
+    <None Include="runtimes/linux-x64/native/libluau.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>runtimes/linux-x64/native/</PackagePath>
+      <Pack>true</Pack>
+    </None>
+  </ItemGroup>
+
 </Project>
