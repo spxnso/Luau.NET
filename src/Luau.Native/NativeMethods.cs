@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 using lua_State = System.IntPtr;
 
-namespace Luau
+namespace Luau.Native
 {
     public static partial class NativeMethods
     {
