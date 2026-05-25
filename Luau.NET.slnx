@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Luau.Native/Luau.Native.csproj" />
+    <Project Path="src/Luau/Luau.csproj" />
+  </Folder>
+</Solution>
