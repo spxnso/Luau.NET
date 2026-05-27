@@ -1,4 +1,4 @@
-namespace Luau.Native {
+namespace Luau.Runtime {
     public enum LuauCoStatus {
         Run = 0,
         Suspended = 1,

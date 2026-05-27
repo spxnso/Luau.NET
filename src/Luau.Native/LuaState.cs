@@ -22,7 +22,7 @@ namespace Luau.Native
         {
             return new LuaState(NativeMethods.lua_newthread(Handle));
         }
-        
+
         public LuaState MainThread()
         {
             return new LuaState(NativeMethods.lua_mainthread(Handle));
@@ -107,7 +107,7 @@ namespace Luau.Native
         public bool Equal(int idx1, int idx2) => NativeMethods.lua_equal(Handle, idx1, idx2) != 0;
         public bool RawEqual(int idx1, int idx2) => NativeMethods.lua_rawequal(Handle, idx1, idx2) != 0;
         public bool LessThan(int idx1, int idx2) => NativeMethods.lua_lessthan(Handle, idx1, idx2) != 0;
-        
+
         public double ToNumberX(int idx, out bool isnum)
         {
             double res = NativeMethods.lua_tonumberx(Handle, idx, out int is_num);
@@ -132,6 +132,8 @@ namespace Luau.Native
         public IntPtr ToVector(int idx) => NativeMethods.lua_tovector(Handle, idx);
         public bool ToBoolean(int idx) => NativeMethods.lua_toboolean(Handle, idx) != 0;
 
+        public double ToNumber(int idx) => NativeMethods.lua_tonumberx(Handle, idx, out _);
+
         public long ToInteger64(int idx, out bool isinteger)
         {
             long res = NativeMethods.lua_tointeger64(Handle, idx, out int is_int);
@@ -150,7 +152,7 @@ namespace Luau.Native
         public IntPtr ToLightUserdataTagged(int idx, int tag) => NativeMethods.lua_tolightuserdatatagged(Handle, idx, tag);
         public IntPtr ToUserdata(int idx) => NativeMethods.lua_touserdata(Handle, idx);
         public IntPtr ToUserdataTagged(int idx, int tag) => NativeMethods.lua_touserdatatagged(Handle, idx, tag);
-        
+
         public int UserdataTag(int idx) => NativeMethods.lua_userdatatag(Handle, idx);
         public int LightUserdataTag(int idx) => NativeMethods.lua_lightuserdatatag(Handle, idx);
         public LuaState ToThread(int idx) => new LuaState(NativeMethods.lua_tothread(Handle, idx));
@@ -181,6 +183,13 @@ namespace Luau.Native
         #region Get functions
         public int GetTable(int idx) => NativeMethods.lua_gettable(Handle, idx);
         public int GetField(int idx, string k) => NativeMethods.lua_getfield(Handle, idx, k);
+
+        // Alias for GetField with LUA_GLOBALSINDEX
+        public void GetGlobal(string name)
+        {
+            GetField(LuaConstants.LUA_GLOBALSINDEX, name);
+        }
+
         public int RawGetField(int idx, string k) => NativeMethods.lua_rawgetfield(Handle, idx, k);
         public int RawGet(int idx) => NativeMethods.lua_rawget(Handle, idx);
         public int RawGetI(int idx, int n) => NativeMethods.lua_rawgeti(Handle, idx, n);
@@ -196,6 +205,13 @@ namespace Luau.Native
         #region Set functions
         public void SetTable(int idx) => NativeMethods.lua_settable(Handle, idx);
         public void SetField(int idx, string k) => NativeMethods.lua_setfield(Handle, idx, k);
+
+        // Alias for SetField with LUA_GLOBALSINDEX
+        public void SetGlobal(string name)
+        {
+            SetField(LuaConstants.LUA_GLOBALSINDEX, name);
+        }
+
         public void RawSetField(int idx, string k) => NativeMethods.lua_rawsetfield(Handle, idx, k);
         public void RawSet(int idx) => NativeMethods.lua_rawset(Handle, idx);
         public void RawSetI(int idx, int n) => NativeMethods.lua_rawseti(Handle, idx, n);
@@ -271,7 +287,7 @@ namespace Luau.Native
         public int OpenVector() => NativeMethods.luaopen_vector(Handle);
         public int OpenInteger() => NativeMethods.luaopen_integer(Handle);
         #endregion
-        
+
         #region Debug API
         public int StackDepth() => NativeMethods.lua_stackdepth(Handle);
         public int GetInfo(int level, string what, IntPtr ar) => NativeMethods.lua_getinfo(Handle, level, what, ar);
@@ -285,6 +301,13 @@ namespace Luau.Native
         public void GetCoverage(int funcindex, IntPtr context, IntPtr callback) => NativeMethods.lua_getcoverage(Handle, funcindex, context, callback);
         public void GetCounters(int funcindex, IntPtr context, IntPtr functionvisit, IntPtr countervisit) => NativeMethods.lua_getcounters(Handle, funcindex, context, functionvisit, countervisit);
         public IntPtr DebugTrace() => NativeMethods.lua_debugtrace(Handle);
+        #endregion
+
+        #region Sandboxing functions
+        public void Sandbox() => NativeMethods.luaL_sandbox(Handle);
+
+        public void SandboxThread() => NativeMethods.luaL_sandboxthread(Handle);
+
         #endregion
     }
 }

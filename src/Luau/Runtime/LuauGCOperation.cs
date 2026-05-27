@@ -1,4 +1,4 @@
-namespace Luau.Native
+namespace Luau.Runtime
 {
     public enum LuauGCOperation
     {
