@@ -1,3 +1,13 @@
-namespace Luau {
-    public class LuauException(string message) : Exception(message) {}
+namespace Luau
+{
+    public class LuauException : Exception
+    {
+        public LuauException(string message) : base(message)
+        {
+        }
+
+        public LuauException(string message, Exception ex) : base(message, ex)
+        {
+        }
+    }
 }
