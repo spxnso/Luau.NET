@@ -11,11 +11,6 @@ namespace Luau
 
         public bool IsDisposed { get; private set; }
 
-        ~LuauChunk()
-        {
-            Dispose(false);
-        }
-
         public void Dispose()
         {
             Dispose(true);
