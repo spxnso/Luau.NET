@@ -8,5 +8,7 @@ namespace Luau.Native
         public const int LUA_REGISTRYINDEX = -10000; // -LUAI_MAXCSTACK - 2000
         public const int LUA_ENVIRONINDEX = -10001;  // -LUAI_MAXCSTACK - 2001
         public const int LUA_GLOBALSINDEX = -10002;  // -LUAI_MAXCSTACK - 2002
+
+        public const byte LBC_VERSION_TARGET = 6;
     }
 }

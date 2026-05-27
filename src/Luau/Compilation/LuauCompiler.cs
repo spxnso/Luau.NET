@@ -26,10 +26,11 @@ namespace Luau.Compilation
                     size,
                     nativeOptions.Pointer,
                     out UIntPtr outsize);
-
+                    
                 if (bytecode == IntPtr.Zero)
-                    throw new LuauException("Compilation failed.");
+                    throw new LuauException("Compilation failed. No bytecode was generated.");
 
+                // TODO: Add more detailed error handling here.
 
                 return new LuauChunk(bytecode, outsize);
 
