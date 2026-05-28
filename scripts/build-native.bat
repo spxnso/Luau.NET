@@ -1,27 +1,34 @@
 @echo off
 setlocal
-set "ROOT=%~dp0"
 
-:: Create an empty glue.c file because it is required by CMakeLists.txt
-echo // hi luau > "%ROOT%native\luau_interop.c"
+set "SCRIPT_DIR=%~dp0"
 
-:: Build
-if exist "%ROOT%build" rmdir /s /q "%ROOT%build"
-mkdir "%ROOT%build"
-cd /d "%ROOT%build"
+for %%I in ("%SCRIPT_DIR%..") do set "ROOT=%%~fI"
 
-cmake .. -G "Visual Studio 17 2022" -A x64
+echo // hi luau > "%ROOT%\glue.c"
+
+set "BUILD_DIR=%ROOT%\build"
+
+if exist "%BUILD_DIR%" rmdir /s /q "%BUILD_DIR%"
+mkdir "%BUILD_DIR%"
+
+cd /d "%BUILD_DIR%"
+
+
+cmake "%ROOT%" -G "Visual Studio 18 2026" -A x64
 cmake --build . --config Release
 
-:: Copy to native
-if not exist "%ROOT%src\Luau.Native\runtimes\win-x64\native" (
-    mkdir "%ROOT%src\Luau.Native\runtimes\win-x64\native"
-)
-copy /y "Release\luau.dll" "%ROOT%src\Luau.Native\runtimes\win-x64\native\luau.dll"
+set "OUT_DIR=%ROOT%\src\Luau.Native\runtimes\win-x64\native"
 
-echo Done! luau.dll copied to src\Luau.Native\runtimes\win-x64\native\
+if not exist "%OUT_DIR%" (
+    mkdir "%OUT_DIR%"
+)
+
+copy /y "Release\luau.dll" "%OUT_DIR%\luau.dll"
+
+echo Done! luau.dll copied to %OUT_DIR%
 
 :: Cleanup
 cd /d "%ROOT%"
-rmdir /s /q "%ROOT%build"
-del "%ROOT%native\luau_interop.c"
+rmdir /s /q "%BUILD_DIR%"
+del "%ROOT%\glue.c"
