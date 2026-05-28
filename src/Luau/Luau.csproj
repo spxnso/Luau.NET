@@ -9,6 +9,7 @@
     <PackageId>LuauInterop</PackageId>
     <Description>Luau bindings for .NET</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>

@@ -9,6 +9,7 @@
     <PackageId>LuauInterop.Native</PackageId>
     <Description>Native runtime libraries for LuauInterop.</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <!-- Native P/Invoke references and runtime libraries -->
