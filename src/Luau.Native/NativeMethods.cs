@@ -610,16 +610,9 @@ namespace Luau.Native
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
         public static partial IntPtr luau_compile(IntPtr source, UIntPtr size, IntPtr options, out UIntPtr outsize);
 
-#if LINUX
-        [LibraryImport("libc", EntryPoint = "free")]
+        [LibraryImport(LuauLibraryName)]
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-        public static partial void free(IntPtr ptr);
-#elif WINDOWS
-        [LibraryImport("msvcrt", EntryPoint = "free")]
-        [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-        public static partial void free(IntPtr ptr);
-#endif
-
+        public static partial void lua_free(IntPtr ptr);
         #region Library functions
 
         [LibraryImport(LuauLibraryName)]
