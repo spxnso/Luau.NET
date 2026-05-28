@@ -1,0 +1,35 @@
+name: Publish to NuGet
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Package version (e.g. 1.0.0)'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.x
+
+      - name: Set version
+        run: |
+          sed -i "s|<Version>.*</Version>|<Version>${{ inputs.version }}</Version>|g" src/Luau.Native/Luau.Native.csproj
+          sed -i "s|<Version>.*</Version>|<Version>${{ inputs.version }}</Version>|g" src/Luau/Luau.csproj
+
+      - name: Pack
+        run: |
+          dotnet pack src/Luau.Native/Luau.Native.csproj -c Release -o nupkgs
+          dotnet pack src/Luau/Luau.csproj -c Release -o nupkgs
+
+      - name: Push to NuGet
+        run: dotnet nuget push nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
