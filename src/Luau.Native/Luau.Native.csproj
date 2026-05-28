@@ -31,7 +31,7 @@
     </None>
 
 
-    <None Include="runtimes/osx-x64/native/luau.dylib">
+    <None Include="runtimes/osx-x64/native/libluau.dylib">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <PackagePath>runtimes/osx-x64/native/</PackagePath>
       <Pack>true</Pack>
