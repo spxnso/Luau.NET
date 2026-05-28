@@ -26,6 +26,7 @@ if(MSVC)
         /WHOLEARCHIVE:$<TARGET_FILE:Luau.Compiler>
         /WHOLEARCHIVE:$<TARGET_FILE:Luau.CodeGen>
         /WHOLEARCHIVE:$<TARGET_FILE:Luau.Common>
+        /DEF:${CMAKE_SOURCE_DIR}/luau.def
     )
 elseif(APPLE)
     target_link_options(luau PRIVATE
