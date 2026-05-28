@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace Luau.Objects
 {
     public sealed class LuauUserData(Luau owner, int reference) : LuauBase(owner, reference)
@@ -7,12 +9,16 @@ namespace Luau.Objects
             get
             {
                 ThrowIfDisposed();
-
                 int stackBase = Owner.State.GetTop();
-                PushReference();
-                IntPtr ptr = Owner.State.ToUserdata(-1);
-                Owner.State.SetTop(stackBase);
-                return ptr;
+                try
+                {
+                    PushReference();
+                    return Owner.State.ToUserdata(-1);
+                }
+                finally
+                {
+                    Owner.State.SetTop(stackBase);
+                }
             }
         }
 
@@ -21,13 +27,31 @@ namespace Luau.Objects
             get
             {
                 ThrowIfDisposed();
-
                 int stackBase = Owner.State.GetTop();
-                PushReference();
-                int tag = Owner.State.UserdataTag(-1);
-                Owner.State.SetTop(stackBase);
-                return tag;
+                try
+                {
+                    PushReference();
+                    return Owner.State.UserdataTag(-1);
+                }
+                finally
+                {
+                    Owner.State.SetTop(stackBase);
+                }
             }
+        }
+
+        public T Read<T>() where T : unmanaged
+        {
+            ThrowIfDisposed();
+
+            IntPtr ptr = Pointer;
+            if (ptr == IntPtr.Zero)
+                throw new InvalidOperationException("Userdata pointer is null.");
+
+            if (Marshal.SizeOf<T>() > int.MaxValue)
+                throw new InvalidOperationException("Type too large.");
+
+            return Marshal.PtrToStructure<T>(ptr);
         }
     }
 }

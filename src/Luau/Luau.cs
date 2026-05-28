@@ -47,6 +47,11 @@ namespace Luau
             }
         }
 
+        ~Luau()
+        {
+            Dispose(false);
+        }
+
         public void Dispose()
         {
             Dispose(true);
@@ -90,12 +95,46 @@ namespace Luau
 
             var results = new object?[resultCount];
 
-            for (int i = 0; i < resultCount; i++)
+            try
             {
-                results[i] = GetObject(stackBase + i + 1);
+                for (int i = 0; i < resultCount; i++)
+                    results[i] = GetObject(stackBase + i + 1);
+            }
+            finally
+            {
+                Pop(resultCount);
             }
 
-            Pop(resultCount);
+            return results;
+        }
+
+        public object?[] DoChunk(LuauChunk chunk, string chunkName = "chunk")
+        {
+            ThrowIfDisposed();
+
+            int stackBase = State.GetTop();
+
+            LuauStatus loadStatus = (LuauStatus)State.Load(chunkName, chunk.Pointer, chunk.Size, 0);
+            if (loadStatus != LuauStatus.OK)
+                ThrowLastError();
+
+            LuauStatus callStatus = (LuauStatus)State.PCall(0, LuaConstants.LUA_MULTRET, 0);
+            if (callStatus != LuauStatus.OK)
+                ThrowLastError();
+
+            int resultCount = State.GetTop() - stackBase;
+
+            var results = new object?[resultCount];
+
+            try
+            {
+                for (int i = 0; i < resultCount; i++)
+                    results[i] = GetObject(stackBase + i + 1);
+            }
+            finally
+            {
+                Pop(resultCount);
+            }
 
             return results;
         }
@@ -348,9 +387,16 @@ namespace Luau
             int errorIndex = State.AbsIndex(-1);
             string message = "Unknown error";
 
-            IntPtr errorPtr = State.ToLString(errorIndex, out _);
-            if (errorPtr != IntPtr.Zero)
-                message = Marshal.PtrToStringUTF8(errorPtr) ?? message;
+            try
+            {
+                IntPtr errorPtr = State.ToLString(errorIndex, out _);
+                if (errorPtr != IntPtr.Zero)
+                    message = Marshal.PtrToStringUTF8(errorPtr) ?? message;
+            }
+            finally
+            {
+                Pop(1);
+            }
 
             return message;
         }

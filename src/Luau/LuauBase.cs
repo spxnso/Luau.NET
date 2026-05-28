@@ -9,6 +9,11 @@ namespace Luau
 
         public bool IsDisposed { get; private set; }
 
+        ~LuauBase()
+        {
+            Dispose(false);
+        }
+
         public void Dispose()
         {
             Dispose(true);
@@ -20,7 +25,7 @@ namespace Luau
             if (IsDisposed)
                 return;
 
-            if (!Owner.State.IsNull)
+            if (!Owner.IsDisposed && !Owner.State.IsNull)
                 Owner.State.Unref(Reference);
 
             IsDisposed = true;
@@ -29,12 +34,12 @@ namespace Luau
         protected void ThrowIfDisposed()
         {
             ObjectDisposedException.ThrowIf(
-                IsDisposed || Owner.State.IsNull,
+                IsDisposed || Owner.IsDisposed || Owner.State.IsNull,
                 GetType().Name
             );
         }
 
-        internal protected void PushReference()
+        protected internal void PushReference()
         {
             ThrowIfDisposed();
             Owner.State.RawGetI(LuaConstants.LUA_REGISTRYINDEX, Reference);

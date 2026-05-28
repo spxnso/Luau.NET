@@ -3,10 +3,9 @@ using Luau.Native;
 
 namespace Luau
 {
-    // TODO: Properly implement IDisposable in order to not be able to use the chunk after it has been disposed. 
     public class LuauChunk(IntPtr pointer, UIntPtr size) : IDisposable
     {
-        public IntPtr Pointer { get; set; } = pointer;
+        public IntPtr Pointer { get; private set; } = pointer;
         public UIntPtr Size { get; } = size;
 
         public bool IsDisposed { get; private set; }
@@ -17,6 +16,11 @@ namespace Luau
             GC.SuppressFinalize(this);
         }
 
+        ~LuauChunk()
+        {
+            Dispose(false);
+        }
+
         protected virtual void Dispose(bool disposing)
         {
             if (IsDisposed)
@@ -24,7 +28,7 @@ namespace Luau
 
             if (Pointer != IntPtr.Zero)
             {
-                NativeMethods.free(Pointer);
+                NativeMethods.lua_free(Pointer);
                 Pointer = IntPtr.Zero;
             }
 
@@ -35,12 +39,15 @@ namespace Luau
         {
             ThrowIfDisposed();
 
+            if ((ulong)Size > int.MaxValue)
+                throw new InvalidOperationException("Chunk too large.");
+
             return new Span<byte>((void*)Pointer, (int)Size);
         }
 
         private void ThrowIfDisposed()
         {
-            ObjectDisposedException.ThrowIf(Pointer == IntPtr.Zero, GetType().Name);
+            ObjectDisposedException.ThrowIf(IsDisposed, GetType().Name);
         }
 
         public byte[] ToByteArray()
