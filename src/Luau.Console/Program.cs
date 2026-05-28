@@ -13,8 +13,9 @@ class Program
             luau.OpenLibraries();
             luau.State.Sandbox();
 
-            luau.DoString(File.ReadAllText("input.luau"));
+            var chunk = luau.Compile(File.ReadAllText("input.luau"));
 
+            luau.DoChunk(chunk);
         }
         catch (Luau.LuauException ex)
         {
