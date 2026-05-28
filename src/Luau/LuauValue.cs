@@ -11,7 +11,7 @@ namespace Luau
 
         public object? Reference { get; } = reference;
 
-        public object? ToObject()
+        public object? ToClr()
         {
             return Type switch
             {
@@ -32,7 +32,7 @@ namespace Luau
 
         public override string ToString()
         {
-            return ToObject()?.ToString() ?? "nil";
+            return ToClr()?.ToString() ?? "nil";
         }
 
         public static implicit operator LuauValue(double value) => new(LuauType.Number, value, 0, null);
