@@ -13,7 +13,7 @@ mkdir "%BUILD_DIR%"
 cd /d "%BUILD_DIR%"
 
 
-cmake "%ROOT%" -G "Visual Studio 18 2026" -A x64
+cmake "%ROOT%" -G "Visual Studio 17 2022" -A x64
 cmake --build . --config Release
 
 set "OUT_DIR=%ROOT%\src\Luau.Native\runtimes\win-x64\native"
