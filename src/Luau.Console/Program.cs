@@ -6,14 +6,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        using var state = new Luau.Luau();
+        using var luau = new Luau.Luau();
 
         try
         {
-            state.OpenLibraries();
-            state.State.Sandbox();
+            luau.OpenLibraries();
+            luau.State.Sandbox();
 
-            state.DoString(File.ReadAllText("input.luau"));
+            luau.DoString(File.ReadAllText("input.luau"));
 
         }
         catch (Luau.LuauException ex)
