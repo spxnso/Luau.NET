@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Authors>spxnso</Authors>
+    <RepositoryUrl>https://github.com/spxnso/LuauInterop</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/spxnso/LuauInterop</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+</Project>
