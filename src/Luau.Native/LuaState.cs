@@ -98,7 +98,11 @@ namespace Luau.Native
         #region Access functions (stack -> C)
         public bool IsNumber(int idx) => NativeMethods.lua_isnumber(Handle, idx) != 0;
         public bool IsString(int idx) => NativeMethods.lua_isstring(Handle, idx) != 0;
-        public bool IsInteger64(int idx) => NativeMethods.lua_isinteger64(Handle, idx) != 0;
+
+        // TODO: Investigate this
+        // This seem to be exposed in lua.h, but missing in shared library, so we can't use it for now.
+        // public bool IsInteger64(int idx) => NativeMethods.lua_isinteger64(Handle, idx) != 0;
+        
         public bool IsCFunction(int idx) => NativeMethods.lua_iscfunction(Handle, idx) != 0;
         public bool IsLFunction(int idx) => NativeMethods.lua_isLfunction(Handle, idx) != 0;
         public bool IsUserdata(int idx) => NativeMethods.lua_isuserdata(Handle, idx) != 0;

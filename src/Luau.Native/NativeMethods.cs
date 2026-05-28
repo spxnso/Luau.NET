@@ -91,9 +91,10 @@ namespace Luau.Native
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
         public static partial int lua_isstring(lua_State L, int idx);
 
-        [LibraryImport(LuauLibraryName)]
-        [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-        public static partial int lua_isinteger64(lua_State L, int idx);
+        // Cf. LuaState.cs
+        // [LibraryImport(LuauLibraryName)]
+        // [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
+        // public static partial int lua_isinteger64(lua_State L, int idx);
 
         [LibraryImport(LuauLibraryName)]
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -609,9 +610,15 @@ namespace Luau.Native
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
         public static partial IntPtr luau_compile(IntPtr source, UIntPtr size, IntPtr options, out UIntPtr outsize);
 
+#if LINUX
         [LibraryImport("libc", EntryPoint = "free")]
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
         public static partial void free(IntPtr ptr);
+#elif WINDOWS
+        [LibraryImport("msvcrt", EntryPoint = "free")]
+        [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
+        public static partial void free(IntPtr ptr);
+#endif
 
         #region Library functions
 
@@ -672,7 +679,7 @@ namespace Luau.Native
         [LibraryImport(LuauLibraryName)]
         [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
         public static partial void luaL_sandboxthread(lua_State L);
-        
+
         #endregion
     }
 }
