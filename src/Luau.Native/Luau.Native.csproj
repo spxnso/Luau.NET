@@ -5,7 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <!-- <GenerateDocumentationFile>true</GenerateDocumentationFile> -->
+
+
+    <PackageId>LuauInterop.Native</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>spxnso</Authors>
+    <Description>Native runtime libraries for LuauInterop.</Description>
+    <RepositoryUrl>https://github.com/spxnso/LuauInterop</RepositoryUrl>
+    <PackageLicense>MIT</PackageLicense>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <!-- Native P/Invoke references and runtime libraries -->
@@ -16,9 +24,16 @@
       <Pack>true</Pack>
     </None>
 
-      <None Include="runtimes/win-x64/native/luau.dll">
+    <None Include="runtimes/win-x64/native/luau.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <PackagePath>runtimes/win-x64/native/</PackagePath>
+      <Pack>true</Pack>
+    </None>
+
+
+    <None Include="runtimes/osx-x64/native/luau.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>runtimes/osx-x64/native/</PackagePath>
       <Pack>true</Pack>
     </None>
   </ItemGroup>
