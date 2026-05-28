@@ -15,6 +15,12 @@
       <PackagePath>runtimes/linux-x64/native/</PackagePath>
       <Pack>true</Pack>
     </None>
+
+      <None Include="runtimes/win-x64/native/luau.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackagePath>runtimes/win-x64/native/</PackagePath>
+      <Pack>true</Pack>
+    </None>
   </ItemGroup>
 
 </Project>
