@@ -161,6 +161,8 @@ using (co)
 luau.SetFFlag(&quot;LuauIntegerType&quot;, true);
 luau.SetFFlag(&quot;LuauIntegerLibrary&quot;, true);
 
+Console.WriteLine(luau.GetFFlag(&quot;LuauIntegerType&quot;)) // True
+
 luau.OpenLibraries();
 
 var results = luau.DoString(@&quot;

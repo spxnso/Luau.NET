@@ -217,6 +217,22 @@ references:
   isSpec: "True"
   fullName: LuauInterop.Luau.~Luau
   nameWithType: Luau.~Luau
+- uid: LuauInterop.Luau.GetFFlag(System.String)
+  name: GetFFlag(string)
+  href: api/LuauInterop.Luau.html#LuauInterop_Luau_GetFFlag_System_String_
+  commentId: M:LuauInterop.Luau.GetFFlag(System.String)
+  name.vb: GetFFlag(String)
+  fullName: LuauInterop.Luau.GetFFlag(string)
+  fullName.vb: LuauInterop.Luau.GetFFlag(String)
+  nameWithType: Luau.GetFFlag(string)
+  nameWithType.vb: Luau.GetFFlag(String)
+- uid: LuauInterop.Luau.GetFFlag*
+  name: GetFFlag
+  href: api/LuauInterop.Luau.html#LuauInterop_Luau_GetFFlag_
+  commentId: Overload:LuauInterop.Luau.GetFFlag
+  isSpec: "True"
+  fullName: LuauInterop.Luau.GetFFlag
+  nameWithType: Luau.GetFFlag
 - uid: LuauInterop.Luau.GetValue(System.Int32)
   name: GetValue(int)
   href: api/LuauInterop.Luau.html#LuauInterop_Luau_GetValue_System_Int32_
@@ -5842,6 +5858,22 @@ references:
   isSpec: "True"
   fullName: LuauInterop.Native.NativeMethods.luau_compile
   nameWithType: NativeMethods.luau_compile
+- uid: LuauInterop.Native.NativeMethods.luau_getfflag(System.String)
+  name: luau_getfflag(string)
+  href: api/LuauInterop.Native.NativeMethods.html#LuauInterop_Native_NativeMethods_luau_getfflag_System_String_
+  commentId: M:LuauInterop.Native.NativeMethods.luau_getfflag(System.String)
+  name.vb: luau_getfflag(String)
+  fullName: LuauInterop.Native.NativeMethods.luau_getfflag(string)
+  fullName.vb: LuauInterop.Native.NativeMethods.luau_getfflag(String)
+  nameWithType: NativeMethods.luau_getfflag(string)
+  nameWithType.vb: NativeMethods.luau_getfflag(String)
+- uid: LuauInterop.Native.NativeMethods.luau_getfflag*
+  name: luau_getfflag
+  href: api/LuauInterop.Native.NativeMethods.html#LuauInterop_Native_NativeMethods_luau_getfflag_
+  commentId: Overload:LuauInterop.Native.NativeMethods.luau_getfflag
+  isSpec: "True"
+  fullName: LuauInterop.Native.NativeMethods.luau_getfflag
+  nameWithType: NativeMethods.luau_getfflag
 - uid: LuauInterop.Native.NativeMethods.luau_load(System.IntPtr,System.String,System.IntPtr,System.UIntPtr,System.Int32)
   name: luau_load(nint, string, nint, nuint, int)
   href: api/LuauInterop.Native.NativeMethods.html#LuauInterop_Native_NativeMethods_luau_load_System_IntPtr_System_String_System_IntPtr_System_UIntPtr_System_Int32_
