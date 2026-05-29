@@ -1,0 +1,83 @@
+### YamlMime:TableOfContent
+items:
+- uid: LuauInterop
+  name: LuauInterop
+  type: Namespace
+  items:
+  - uid: LuauInterop.Luau
+    name: Luau
+    type: Class
+  - uid: LuauInterop.LuauBase
+    name: LuauBase
+    type: Class
+  - uid: LuauInterop.LuauChunk
+    name: LuauChunk
+    type: Class
+  - uid: LuauInterop.LuauException
+    name: LuauException
+    type: Class
+  - uid: LuauInterop.LuauType
+    name: LuauType
+    type: Enum
+  - uid: LuauInterop.LuauValue
+    name: LuauValue
+    type: Struct
+- uid: LuauInterop.Compilation
+  name: LuauInterop.Compilation
+  type: Namespace
+  items:
+  - uid: LuauInterop.Compilation.LuauCompileOptions
+    name: LuauCompileOptions
+    type: Class
+  - uid: LuauInterop.Compilation.LuauCompiler
+    name: LuauCompiler
+    type: Class
+- uid: LuauInterop.Native
+  name: LuauInterop.Native
+  type: Namespace
+  items:
+  - uid: LuauInterop.Native.LuaConstants
+    name: LuaConstants
+    type: Class
+  - uid: LuauInterop.Native.LuaState
+    name: LuaState
+    type: Struct
+  - uid: LuauInterop.Native.NativeMethods
+    name: NativeMethods
+    type: Class
+- uid: LuauInterop.Objects
+  name: LuauInterop.Objects
+  type: Namespace
+  items:
+  - uid: LuauInterop.Objects.LuauBuffer
+    name: LuauBuffer
+    type: Class
+  - uid: LuauInterop.Objects.LuauFunction
+    name: LuauFunction
+    type: Class
+  - uid: LuauInterop.Objects.LuauTable
+    name: LuauTable
+    type: Class
+  - uid: LuauInterop.Objects.LuauUserData
+    name: LuauUserData
+    type: Class
+  - uid: LuauInterop.Objects.LuauVector
+    name: LuauVector
+    type: Struct
+- uid: LuauInterop.Runtime
+  name: LuauInterop.Runtime
+  type: Namespace
+  items:
+  - uid: LuauInterop.Runtime.LuauCoStatus
+    name: LuauCoStatus
+    type: Enum
+  - uid: LuauInterop.Runtime.LuauGCOperation
+    name: LuauGCOperation
+    type: Enum
+  - uid: LuauInterop.Runtime.LuauStatus
+    name: LuauStatus
+    type: Enum
+  - uid: LuauInterop.Runtime.LuauThread
+    name: LuauThread
+    type: Class
+memberLayout: SamePage

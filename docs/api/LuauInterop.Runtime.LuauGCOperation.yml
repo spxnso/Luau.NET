@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Runtime.LuauGCOperation
+  commentId: T:LuauInterop.Runtime.LuauGCOperation
+  id: LuauGCOperation
+  parent: LuauInterop.Runtime
+  children:
+  - LuauInterop.Runtime.LuauGCOperation.Collect
+  - LuauInterop.Runtime.LuauGCOperation.Count
+  - LuauInterop.Runtime.LuauGCOperation.CountBytes
+  - LuauInterop.Runtime.LuauGCOperation.IsRunning
+  - LuauInterop.Runtime.LuauGCOperation.Restart
+  - LuauInterop.Runtime.LuauGCOperation.SetGoal
+  - LuauInterop.Runtime.LuauGCOperation.SetStepMultiplier
+  - LuauInterop.Runtime.LuauGCOperation.SetStepSize
+  - LuauInterop.Runtime.LuauGCOperation.Step
+  - LuauInterop.Runtime.LuauGCOperation.Stop
+  langs:
+  - csharp
+  - vb
+  name: LuauGCOperation
+  nameWithType: LuauGCOperation
+  fullName: LuauInterop.Runtime.LuauGCOperation
+  type: Enum
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauGCOperation
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 2
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: public enum LuauGCOperation
+    content.vb: Public Enum LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.Stop
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.Stop
+  id: Stop
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: Stop
+  nameWithType: LuauGCOperation.Stop
+  fullName: LuauInterop.Runtime.LuauGCOperation.Stop
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Stop
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 4
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Stop = 0
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.Restart
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.Restart
+  id: Restart
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: Restart
+  nameWithType: LuauGCOperation.Restart
+  fullName: LuauInterop.Runtime.LuauGCOperation.Restart
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Restart
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 5
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Restart = 1
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.Collect
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.Collect
+  id: Collect
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: Collect
+  nameWithType: LuauGCOperation.Collect
+  fullName: LuauInterop.Runtime.LuauGCOperation.Collect
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Collect
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 6
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Collect = 2
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.Count
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.Count
+  id: Count
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: LuauGCOperation.Count
+  fullName: LuauInterop.Runtime.LuauGCOperation.Count
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Count
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 7
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Count = 3
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.CountBytes
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.CountBytes
+  id: CountBytes
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: CountBytes
+  nameWithType: LuauGCOperation.CountBytes
+  fullName: LuauInterop.Runtime.LuauGCOperation.CountBytes
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: CountBytes
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 8
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: CountBytes = 4
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.IsRunning
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.IsRunning
+  id: IsRunning
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: LuauGCOperation.IsRunning
+  fullName: LuauInterop.Runtime.LuauGCOperation.IsRunning
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: IsRunning
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 9
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: IsRunning = 5
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.Step
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.Step
+  id: Step
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: Step
+  nameWithType: LuauGCOperation.Step
+  fullName: LuauInterop.Runtime.LuauGCOperation.Step
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Step
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 10
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Step = 6
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.SetGoal
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.SetGoal
+  id: SetGoal
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: SetGoal
+  nameWithType: LuauGCOperation.SetGoal
+  fullName: LuauInterop.Runtime.LuauGCOperation.SetGoal
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: SetGoal
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 11
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: SetGoal = 7
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.SetStepMultiplier
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.SetStepMultiplier
+  id: SetStepMultiplier
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: SetStepMultiplier
+  nameWithType: LuauGCOperation.SetStepMultiplier
+  fullName: LuauInterop.Runtime.LuauGCOperation.SetStepMultiplier
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: SetStepMultiplier
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 12
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: SetStepMultiplier = 8
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauGCOperation.SetStepSize
+  commentId: F:LuauInterop.Runtime.LuauGCOperation.SetStepSize
+  id: SetStepSize
+  parent: LuauInterop.Runtime.LuauGCOperation
+  langs:
+  - csharp
+  - vb
+  name: SetStepSize
+  nameWithType: LuauGCOperation.SetStepSize
+  fullName: LuauInterop.Runtime.LuauGCOperation.SetStepSize
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauGCOperation.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: SetStepSize
+    path: ../src/LuauInterop/Runtime/LuauGCOperation.cs
+    startLine: 13
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: SetStepSize = 9
+    return:
+      type: LuauInterop.Runtime.LuauGCOperation
+references:
+- uid: LuauInterop.Runtime
+  commentId: N:LuauInterop.Runtime
+  href: LuauInterop.html
+  name: LuauInterop.Runtime
+  nameWithType: LuauInterop.Runtime
+  fullName: LuauInterop.Runtime
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+- uid: LuauInterop.Runtime.LuauGCOperation
+  commentId: T:LuauInterop.Runtime.LuauGCOperation
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauGCOperation.html
+  name: LuauGCOperation
+  nameWithType: LuauGCOperation
+  fullName: LuauInterop.Runtime.LuauGCOperation

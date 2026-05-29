@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Compilation
+  commentId: N:LuauInterop.Compilation
+  id: LuauInterop.Compilation
+  children:
+  - LuauInterop.Compilation.LuauCompileOptions
+  - LuauInterop.Compilation.LuauCompiler
+  langs:
+  - csharp
+  - vb
+  name: LuauInterop.Compilation
+  nameWithType: LuauInterop.Compilation
+  fullName: LuauInterop.Compilation
+  type: Namespace
+  assemblies:
+  - LuauInterop
+references:
+- uid: LuauInterop.Compilation.LuauCompileOptions
+  commentId: T:LuauInterop.Compilation.LuauCompileOptions
+  parent: LuauInterop.Compilation
+  href: LuauInterop.Compilation.LuauCompileOptions.html
+  name: LuauCompileOptions
+  nameWithType: LuauCompileOptions
+  fullName: LuauInterop.Compilation.LuauCompileOptions
+- uid: LuauInterop.Compilation.LuauCompiler
+  commentId: T:LuauInterop.Compilation.LuauCompiler
+  href: LuauInterop.Compilation.LuauCompiler.html
+  name: LuauCompiler
+  nameWithType: LuauCompiler
+  fullName: LuauInterop.Compilation.LuauCompiler
+- uid: LuauInterop.Compilation
+  commentId: N:LuauInterop.Compilation
+  href: LuauInterop.html
+  name: LuauInterop.Compilation
+  nameWithType: LuauInterop.Compilation
+  fullName: LuauInterop.Compilation
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html

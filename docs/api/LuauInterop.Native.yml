@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Native
+  commentId: N:LuauInterop.Native
+  id: LuauInterop.Native
+  children:
+  - LuauInterop.Native.LuaConstants
+  - LuauInterop.Native.LuaState
+  - LuauInterop.Native.NativeMethods
+  langs:
+  - csharp
+  - vb
+  name: LuauInterop.Native
+  nameWithType: LuauInterop.Native
+  fullName: LuauInterop.Native
+  type: Namespace
+  assemblies:
+  - LuauInterop.Native
+references:
+- uid: LuauInterop.Native.LuaConstants
+  commentId: T:LuauInterop.Native.LuaConstants
+  href: LuauInterop.Native.LuaConstants.html
+  name: LuaConstants
+  nameWithType: LuaConstants
+  fullName: LuauInterop.Native.LuaConstants
+- uid: LuauInterop.Native.LuaState
+  commentId: T:LuauInterop.Native.LuaState
+  parent: LuauInterop.Native
+  href: LuauInterop.Native.LuaState.html
+  name: LuaState
+  nameWithType: LuaState
+  fullName: LuauInterop.Native.LuaState
+- uid: LuauInterop.Native.NativeMethods
+  commentId: T:LuauInterop.Native.NativeMethods
+  href: LuauInterop.Native.NativeMethods.html
+  name: NativeMethods
+  nameWithType: NativeMethods
+  fullName: LuauInterop.Native.NativeMethods
+- uid: LuauInterop.Native
+  commentId: N:LuauInterop.Native
+  href: LuauInterop.html
+  name: LuauInterop.Native
+  nameWithType: LuauInterop.Native
+  fullName: LuauInterop.Native
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Native
+    name: Native
+    href: LuauInterop.Native.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Native
+    name: Native
+    href: LuauInterop.Native.html
