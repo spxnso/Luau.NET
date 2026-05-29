@@ -1,0 +1,900 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.LuauValue
+  commentId: T:LuauInterop.LuauValue
+  id: LuauValue
+  parent: LuauInterop
+  children:
+  - LuauInterop.LuauValue.#ctor(LuauInterop.LuauType,System.Double,System.Int64,System.Object)
+  - LuauInterop.LuauValue.Integer
+  - LuauInterop.LuauValue.Nil
+  - LuauInterop.LuauValue.Number
+  - LuauInterop.LuauValue.Reference
+  - LuauInterop.LuauValue.ToClr
+  - LuauInterop.LuauValue.ToString
+  - LuauInterop.LuauValue.Type
+  - LuauInterop.LuauValue.op_Implicit(System.Boolean)~LuauInterop.LuauValue
+  - LuauInterop.LuauValue.op_Implicit(System.Double)~LuauInterop.LuauValue
+  - LuauInterop.LuauValue.op_Implicit(System.Int32)~LuauInterop.LuauValue
+  - LuauInterop.LuauValue.op_Implicit(System.Int64)~LuauInterop.LuauValue
+  - LuauInterop.LuauValue.op_Implicit(System.String)~LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: LuauValue
+  nameWithType: LuauValue
+  fullName: LuauInterop.LuauValue
+  type: Struct
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauValue
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 7
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Represents a raw Luau value.
+  example: []
+  syntax:
+    content: public readonly struct LuauValue
+    content.vb: Public Structure LuauValue
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LuauInterop.LuauValue.#ctor(LuauInterop.LuauType,System.Double,System.Int64,System.Object)
+  commentId: M:LuauInterop.LuauValue.#ctor(LuauInterop.LuauType,System.Double,System.Int64,System.Object)
+  id: '#ctor(LuauInterop.LuauType,System.Double,System.Int64,System.Object)'
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: LuauValue(LuauType, double, long, object?)
+  nameWithType: LuauValue.LuauValue(LuauType, double, long, object?)
+  fullName: LuauInterop.LuauValue.LuauValue(LuauInterop.LuauType, double, long, object?)
+  type: Constructor
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: .ctor
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 7
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Represents a raw Luau value.
+  example: []
+  syntax:
+    content: public LuauValue(LuauType type, double number, long integer, object? reference)
+    parameters:
+    - id: type
+      type: LuauInterop.LuauType
+    - id: number
+      type: System.Double
+    - id: integer
+      type: System.Int64
+    - id: reference
+      type: System.Object
+    content.vb: Public Sub New(type As LuauType, number As Double, [integer] As Long, reference As Object)
+  overload: LuauInterop.LuauValue.#ctor*
+  nameWithType.vb: LuauValue.New(LuauType, Double, Long, Object)
+  fullName.vb: LuauInterop.LuauValue.New(LuauInterop.LuauType, Double, Long, Object)
+  name.vb: New(LuauType, Double, Long, Object)
+- uid: LuauInterop.LuauValue.Type
+  commentId: P:LuauInterop.LuauValue.Type
+  id: Type
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: LuauValue.Type
+  fullName: LuauInterop.LuauValue.Type
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Type
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 12
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the Luau type of this value.
+  example: []
+  syntax:
+    content: public LuauType Type { get; }
+    parameters: []
+    return:
+      type: LuauInterop.LuauType
+    content.vb: Public ReadOnly Property Type As LuauType
+  overload: LuauInterop.LuauValue.Type*
+- uid: LuauInterop.LuauValue.Number
+  commentId: P:LuauInterop.LuauValue.Number
+  id: Number
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: LuauValue.Number
+  fullName: LuauInterop.LuauValue.Number
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Number
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 21
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the numeric value.
+  remarks: >-
+    Valid only when <xref href="LuauInterop.LuauValue.Type" data-throw-if-not-resolved="false"></xref> is <xref href="LuauInterop.LuauType.Number" data-throw-if-not-resolved="false"></xref>
+
+    or <xref href="LuauInterop.LuauType.Boolean" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public double Number { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Number As Double
+  overload: LuauInterop.LuauValue.Number*
+- uid: LuauInterop.LuauValue.Integer
+  commentId: P:LuauInterop.LuauValue.Integer
+  id: Integer
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: LuauValue.Integer
+  fullName: LuauInterop.LuauValue.Integer
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Integer
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 29
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the integer value.
+  remarks: Valid only when <xref href="LuauInterop.LuauValue.Type" data-throw-if-not-resolved="false"></xref> is <xref href="LuauInterop.LuauType.Integer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public long Integer { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property [Integer] As Long
+  overload: LuauInterop.LuauValue.Integer*
+- uid: LuauInterop.LuauValue.Reference
+  commentId: P:LuauInterop.LuauValue.Reference
+  id: Reference
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: LuauValue.Reference
+  fullName: LuauInterop.LuauValue.Reference
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Reference
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 37
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the reference-backed value.
+  remarks: Used for strings and other managed reference-backed Luau values.
+  example: []
+  syntax:
+    content: public object? Reference { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Reference As Object
+  overload: LuauInterop.LuauValue.Reference*
+- uid: LuauInterop.LuauValue.ToClr
+  commentId: M:LuauInterop.LuauValue.ToClr
+  id: ToClr
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: ToClr()
+  nameWithType: LuauValue.ToClr()
+  fullName: LuauInterop.LuauValue.ToClr()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ToClr
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 52
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts this value into its managed CLR representation.
+  example: []
+  syntax:
+    content: public object? ToClr()
+    return:
+      type: System.Object
+      description: >-
+        The managed representation of the value,
+
+        or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the value is <code>nil</code>.
+    content.vb: Public Function ToClr() As Object
+  overload: LuauInterop.LuauValue.ToClr*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The value does not contain the expected backing reference.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The value type is not supported for CLR conversion.
+- uid: LuauInterop.LuauValue.ToString
+  commentId: M:LuauInterop.LuauValue.ToString
+  id: ToString
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LuauValue.ToString()
+  fullName: LuauInterop.LuauValue.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ToString
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 76
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Returns the string representation of this value.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: >-
+        The CLR string representation of the value,
+
+        or <code>"nil"</code> if the value is nil.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: LuauInterop.LuauValue.ToString*
+- uid: LuauInterop.LuauValue.op_Implicit(System.Double)~LuauInterop.LuauValue
+  commentId: M:LuauInterop.LuauValue.op_Implicit(System.Double)~LuauInterop.LuauValue
+  id: op_Implicit(System.Double)~LuauInterop.LuauValue
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LuauValue(double)
+  nameWithType: LuauValue.implicit operator LuauValue(double)
+  fullName: LuauInterop.LuauValue.implicit operator LuauInterop.LuauValue(double)
+  type: Operator
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: op_Implicit
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 84
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts a double into a Luau number value.
+  example: []
+  syntax:
+    content: public static implicit operator LuauValue(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared Widening Operator CType(value As Double) As LuauValue
+  overload: LuauInterop.LuauValue.op_Implicit*
+  nameWithType.vb: LuauValue.CType(Double)
+  fullName.vb: LuauInterop.LuauValue.CType(Double)
+  name.vb: CType(Double)
+- uid: LuauInterop.LuauValue.op_Implicit(System.String)~LuauInterop.LuauValue
+  commentId: M:LuauInterop.LuauValue.op_Implicit(System.String)~LuauInterop.LuauValue
+  id: op_Implicit(System.String)~LuauInterop.LuauValue
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LuauValue(string)
+  nameWithType: LuauValue.implicit operator LuauValue(string)
+  fullName: LuauInterop.LuauValue.implicit operator LuauInterop.LuauValue(string)
+  type: Operator
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: op_Implicit
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 89
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts a string into a Luau string value.
+  example: []
+  syntax:
+    content: public static implicit operator LuauValue(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared Widening Operator CType(value As String) As LuauValue
+  overload: LuauInterop.LuauValue.op_Implicit*
+  nameWithType.vb: LuauValue.CType(String)
+  fullName.vb: LuauInterop.LuauValue.CType(String)
+  name.vb: CType(String)
+- uid: LuauInterop.LuauValue.op_Implicit(System.Boolean)~LuauInterop.LuauValue
+  commentId: M:LuauInterop.LuauValue.op_Implicit(System.Boolean)~LuauInterop.LuauValue
+  id: op_Implicit(System.Boolean)~LuauInterop.LuauValue
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LuauValue(bool)
+  nameWithType: LuauValue.implicit operator LuauValue(bool)
+  fullName: LuauInterop.LuauValue.implicit operator LuauInterop.LuauValue(bool)
+  type: Operator
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: op_Implicit
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 94
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts a boolean into a Luau boolean value.
+  example: []
+  syntax:
+    content: public static implicit operator LuauValue(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared Widening Operator CType(value As Boolean) As LuauValue
+  overload: LuauInterop.LuauValue.op_Implicit*
+  nameWithType.vb: LuauValue.CType(Boolean)
+  fullName.vb: LuauInterop.LuauValue.CType(Boolean)
+  name.vb: CType(Boolean)
+- uid: LuauInterop.LuauValue.op_Implicit(System.Int64)~LuauInterop.LuauValue
+  commentId: M:LuauInterop.LuauValue.op_Implicit(System.Int64)~LuauInterop.LuauValue
+  id: op_Implicit(System.Int64)~LuauInterop.LuauValue
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LuauValue(long)
+  nameWithType: LuauValue.implicit operator LuauValue(long)
+  fullName: LuauInterop.LuauValue.implicit operator LuauInterop.LuauValue(long)
+  type: Operator
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: op_Implicit
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 99
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts a 64-bit integer into a Luau integer value.
+  example: []
+  syntax:
+    content: public static implicit operator LuauValue(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared Widening Operator CType(value As Long) As LuauValue
+  overload: LuauInterop.LuauValue.op_Implicit*
+  nameWithType.vb: LuauValue.CType(Long)
+  fullName.vb: LuauInterop.LuauValue.CType(Long)
+  name.vb: CType(Long)
+- uid: LuauInterop.LuauValue.op_Implicit(System.Int32)~LuauInterop.LuauValue
+  commentId: M:LuauInterop.LuauValue.op_Implicit(System.Int32)~LuauInterop.LuauValue
+  id: op_Implicit(System.Int32)~LuauInterop.LuauValue
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: implicit operator LuauValue(int)
+  nameWithType: LuauValue.implicit operator LuauValue(int)
+  fullName: LuauInterop.LuauValue.implicit operator LuauInterop.LuauValue(int)
+  type: Operator
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: op_Implicit
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 104
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Converts a 32-bit integer into a Luau number value.
+  example: []
+  syntax:
+    content: public static implicit operator LuauValue(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared Widening Operator CType(value As Integer) As LuauValue
+  overload: LuauInterop.LuauValue.op_Implicit*
+  nameWithType.vb: LuauValue.CType(Integer)
+  fullName.vb: LuauInterop.LuauValue.CType(Integer)
+  name.vb: CType(Integer)
+- uid: LuauInterop.LuauValue.Nil
+  commentId: P:LuauInterop.LuauValue.Nil
+  id: Nil
+  parent: LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: Nil
+  nameWithType: LuauValue.Nil
+  fullName: LuauInterop.LuauValue.Nil
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/LuauValue.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Nil
+    path: ../src/LuauInterop/LuauValue.cs
+    startLine: 109
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets a Luau nil value.
+  example: []
+  syntax:
+    content: public static LuauValue Nil { get; }
+    parameters: []
+    return:
+      type: LuauInterop.LuauValue
+    content.vb: Public Shared ReadOnly Property Nil As LuauValue
+  overload: LuauInterop.LuauValue.Nil*
+references:
+- uid: LuauInterop
+  commentId: N:LuauInterop
+  href: LuauInterop.html
+  name: LuauInterop
+  nameWithType: LuauInterop
+  fullName: LuauInterop
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LuauInterop.LuauValue.#ctor*
+  commentId: Overload:LuauInterop.LuauValue.#ctor
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue__ctor_LuauInterop_LuauType_System_Double_System_Int64_System_Object_
+  name: LuauValue
+  nameWithType: LuauValue.LuauValue
+  fullName: LuauInterop.LuauValue.LuauValue
+  nameWithType.vb: LuauValue.New
+  fullName.vb: LuauInterop.LuauValue.New
+  name.vb: New
+- uid: LuauInterop.LuauType
+  commentId: T:LuauInterop.LuauType
+  parent: LuauInterop
+  href: LuauInterop.LuauType.html
+  name: LuauType
+  nameWithType: LuauType
+  fullName: LuauInterop.LuauType
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: LuauInterop.LuauValue.Type*
+  commentId: Overload:LuauInterop.LuauValue.Type
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Type
+  name: Type
+  nameWithType: LuauValue.Type
+  fullName: LuauInterop.LuauValue.Type
+- uid: LuauInterop.LuauValue.Type
+  commentId: P:LuauInterop.LuauValue.Type
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Type
+  name: Type
+  nameWithType: LuauValue.Type
+  fullName: LuauInterop.LuauValue.Type
+- uid: LuauInterop.LuauType.Number
+  commentId: F:LuauInterop.LuauType.Number
+  href: LuauInterop.LuauType.html#LuauInterop_LuauType_Number
+  name: Number
+  nameWithType: LuauType.Number
+  fullName: LuauInterop.LuauType.Number
+- uid: LuauInterop.LuauType.Boolean
+  commentId: F:LuauInterop.LuauType.Boolean
+  href: LuauInterop.LuauType.html#LuauInterop_LuauType_Boolean
+  name: Boolean
+  nameWithType: LuauType.Boolean
+  fullName: LuauInterop.LuauType.Boolean
+- uid: LuauInterop.LuauValue.Number*
+  commentId: Overload:LuauInterop.LuauValue.Number
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Number
+  name: Number
+  nameWithType: LuauValue.Number
+  fullName: LuauInterop.LuauValue.Number
+- uid: LuauInterop.LuauType.Integer
+  commentId: F:LuauInterop.LuauType.Integer
+  href: LuauInterop.LuauType.html#LuauInterop_LuauType_Integer
+  name: Integer
+  nameWithType: LuauType.Integer
+  fullName: LuauInterop.LuauType.Integer
+- uid: LuauInterop.LuauValue.Integer*
+  commentId: Overload:LuauInterop.LuauValue.Integer
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Integer
+  name: Integer
+  nameWithType: LuauValue.Integer
+  fullName: LuauInterop.LuauValue.Integer
+- uid: LuauInterop.LuauValue.Reference*
+  commentId: Overload:LuauInterop.LuauValue.Reference
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Reference
+  name: Reference
+  nameWithType: LuauValue.Reference
+  fullName: LuauInterop.LuauValue.Reference
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: LuauInterop.LuauValue.ToClr*
+  commentId: Overload:LuauInterop.LuauValue.ToClr
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_ToClr
+  name: ToClr
+  nameWithType: LuauValue.ToClr
+  fullName: LuauInterop.LuauValue.ToClr
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: LuauInterop.LuauValue.ToString*
+  commentId: Overload:LuauInterop.LuauValue.ToString
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_ToString
+  name: ToString
+  nameWithType: LuauValue.ToString
+  fullName: LuauInterop.LuauValue.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LuauInterop.LuauValue.op_Implicit*
+  commentId: Overload:LuauInterop.LuauValue.op_Implicit
+  name: implicit operator
+  nameWithType: LuauValue.implicit operator
+  fullName: LuauInterop.LuauValue.implicit operator
+  nameWithType.vb: LuauValue.CType
+  fullName.vb: LuauInterop.LuauValue.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: LuauInterop.LuauValue
+  commentId: T:LuauInterop.LuauValue
+  parent: LuauInterop
+  href: LuauInterop.LuauValue.html
+  name: LuauValue
+  nameWithType: LuauValue
+  fullName: LuauInterop.LuauValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LuauInterop.LuauValue.Nil*
+  commentId: Overload:LuauInterop.LuauValue.Nil
+  href: LuauInterop.LuauValue.html#LuauInterop_LuauValue_Nil
+  name: Nil
+  nameWithType: LuauValue.Nil
+  fullName: LuauInterop.LuauValue.Nil

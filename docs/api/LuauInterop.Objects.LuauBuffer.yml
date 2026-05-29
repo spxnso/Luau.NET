@@ -1,0 +1,470 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Objects.LuauBuffer
+  commentId: T:LuauInterop.Objects.LuauBuffer
+  id: LuauBuffer
+  parent: LuauInterop.Objects
+  children:
+  - LuauInterop.Objects.LuauBuffer.#ctor(System.Byte[])
+  - LuauInterop.Objects.LuauBuffer.Data
+  - LuauInterop.Objects.LuauBuffer.Length
+  - LuauInterop.Objects.LuauBuffer.ToString
+  langs:
+  - csharp
+  - vb
+  name: LuauBuffer
+  nameWithType: LuauBuffer
+  fullName: LuauInterop.Objects.LuauBuffer
+  type: Class
+  source:
+    remote:
+      path: src/LuauInterop/Objects/LuauBuffer.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauBuffer
+    path: ../src/LuauInterop/Objects/LuauBuffer.cs
+    startLine: 2
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Objects
+  syntax:
+    content: public sealed class LuauBuffer
+    content.vb: Public NotInheritable Class LuauBuffer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LuauInterop.Objects.LuauBuffer.#ctor(System.Byte[])
+  commentId: M:LuauInterop.Objects.LuauBuffer.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: LuauInterop.Objects.LuauBuffer
+  langs:
+  - csharp
+  - vb
+  name: LuauBuffer(byte[])
+  nameWithType: LuauBuffer.LuauBuffer(byte[])
+  fullName: LuauInterop.Objects.LuauBuffer.LuauBuffer(byte[])
+  type: Constructor
+  source:
+    remote:
+      path: src/LuauInterop/Objects/LuauBuffer.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: .ctor
+    path: ../src/LuauInterop/Objects/LuauBuffer.cs
+    startLine: 2
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Objects
+  syntax:
+    content: public LuauBuffer(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+    content.vb: Public Sub New(data As Byte())
+  overload: LuauInterop.Objects.LuauBuffer.#ctor*
+  nameWithType.vb: LuauBuffer.New(Byte())
+  fullName.vb: LuauInterop.Objects.LuauBuffer.New(Byte())
+  name.vb: New(Byte())
+- uid: LuauInterop.Objects.LuauBuffer.Data
+  commentId: P:LuauInterop.Objects.LuauBuffer.Data
+  id: Data
+  parent: LuauInterop.Objects.LuauBuffer
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: LuauBuffer.Data
+  fullName: LuauInterop.Objects.LuauBuffer.Data
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Objects/LuauBuffer.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Data
+    path: ../src/LuauInterop/Objects/LuauBuffer.cs
+    startLine: 4
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Objects
+  syntax:
+    content: public byte[] Data { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property Data As Byte()
+  overload: LuauInterop.Objects.LuauBuffer.Data*
+- uid: LuauInterop.Objects.LuauBuffer.Length
+  commentId: P:LuauInterop.Objects.LuauBuffer.Length
+  id: Length
+  parent: LuauInterop.Objects.LuauBuffer
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: LuauBuffer.Length
+  fullName: LuauInterop.Objects.LuauBuffer.Length
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Objects/LuauBuffer.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Length
+    path: ../src/LuauInterop/Objects/LuauBuffer.cs
+    startLine: 6
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Objects
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: LuauInterop.Objects.LuauBuffer.Length*
+- uid: LuauInterop.Objects.LuauBuffer.ToString
+  commentId: M:LuauInterop.Objects.LuauBuffer.ToString
+  id: ToString
+  parent: LuauInterop.Objects.LuauBuffer
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LuauBuffer.ToString()
+  fullName: LuauInterop.Objects.LuauBuffer.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Objects/LuauBuffer.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ToString
+    path: ../src/LuauInterop/Objects/LuauBuffer.cs
+    startLine: 8
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Objects
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: LuauInterop.Objects.LuauBuffer.ToString*
+references:
+- uid: LuauInterop.Objects
+  commentId: N:LuauInterop.Objects
+  href: LuauInterop.html
+  name: LuauInterop.Objects
+  nameWithType: LuauInterop.Objects
+  fullName: LuauInterop.Objects
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Objects
+    name: Objects
+    href: LuauInterop.Objects.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Objects
+    name: Objects
+    href: LuauInterop.Objects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LuauInterop.Objects.LuauBuffer.#ctor*
+  commentId: Overload:LuauInterop.Objects.LuauBuffer.#ctor
+  href: LuauInterop.Objects.LuauBuffer.html#LuauInterop_Objects_LuauBuffer__ctor_System_Byte___
+  name: LuauBuffer
+  nameWithType: LuauBuffer.LuauBuffer
+  fullName: LuauInterop.Objects.LuauBuffer.LuauBuffer
+  nameWithType.vb: LuauBuffer.New
+  fullName.vb: LuauInterop.Objects.LuauBuffer.New
+  name.vb: New
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: LuauInterop.Objects.LuauBuffer.Data*
+  commentId: Overload:LuauInterop.Objects.LuauBuffer.Data
+  href: LuauInterop.Objects.LuauBuffer.html#LuauInterop_Objects_LuauBuffer_Data
+  name: Data
+  nameWithType: LuauBuffer.Data
+  fullName: LuauInterop.Objects.LuauBuffer.Data
+- uid: LuauInterop.Objects.LuauBuffer.Length*
+  commentId: Overload:LuauInterop.Objects.LuauBuffer.Length
+  href: LuauInterop.Objects.LuauBuffer.html#LuauInterop_Objects_LuauBuffer_Length
+  name: Length
+  nameWithType: LuauBuffer.Length
+  fullName: LuauInterop.Objects.LuauBuffer.Length
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: LuauInterop.Objects.LuauBuffer.ToString*
+  commentId: Overload:LuauInterop.Objects.LuauBuffer.ToString
+  href: LuauInterop.Objects.LuauBuffer.html#LuauInterop_Objects_LuauBuffer_ToString
+  name: ToString
+  nameWithType: LuauBuffer.ToString
+  fullName: LuauInterop.Objects.LuauBuffer.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Runtime.LuauStatus
+  commentId: T:LuauInterop.Runtime.LuauStatus
+  id: LuauStatus
+  parent: LuauInterop.Runtime
+  children:
+  - LuauInterop.Runtime.LuauStatus.Break
+  - LuauInterop.Runtime.LuauStatus.ErrErr
+  - LuauInterop.Runtime.LuauStatus.ErrMem
+  - LuauInterop.Runtime.LuauStatus.ErrRun
+  - LuauInterop.Runtime.LuauStatus.ErrSyntax
+  - LuauInterop.Runtime.LuauStatus.OK
+  - LuauInterop.Runtime.LuauStatus.Yield
+  langs:
+  - csharp
+  - vb
+  name: LuauStatus
+  nameWithType: LuauStatus
+  fullName: LuauInterop.Runtime.LuauStatus
+  type: Enum
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauStatus
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 2
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: public enum LuauStatus
+    content.vb: Public Enum LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.OK
+  commentId: F:LuauInterop.Runtime.LuauStatus.OK
+  id: OK
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: OK
+  nameWithType: LuauStatus.OK
+  fullName: LuauInterop.Runtime.LuauStatus.OK
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OK
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 4
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: OK = 0
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.Yield
+  commentId: F:LuauInterop.Runtime.LuauStatus.Yield
+  id: Yield
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: Yield
+  nameWithType: LuauStatus.Yield
+  fullName: LuauInterop.Runtime.LuauStatus.Yield
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Yield
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 5
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Yield = 1
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.ErrRun
+  commentId: F:LuauInterop.Runtime.LuauStatus.ErrRun
+  id: ErrRun
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: ErrRun
+  nameWithType: LuauStatus.ErrRun
+  fullName: LuauInterop.Runtime.LuauStatus.ErrRun
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ErrRun
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 6
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: ErrRun = 2
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.ErrSyntax
+  commentId: F:LuauInterop.Runtime.LuauStatus.ErrSyntax
+  id: ErrSyntax
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: ErrSyntax
+  nameWithType: LuauStatus.ErrSyntax
+  fullName: LuauInterop.Runtime.LuauStatus.ErrSyntax
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ErrSyntax
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 7
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: ErrSyntax = 3
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.ErrMem
+  commentId: F:LuauInterop.Runtime.LuauStatus.ErrMem
+  id: ErrMem
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: ErrMem
+  nameWithType: LuauStatus.ErrMem
+  fullName: LuauInterop.Runtime.LuauStatus.ErrMem
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ErrMem
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 8
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: ErrMem = 4
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.ErrErr
+  commentId: F:LuauInterop.Runtime.LuauStatus.ErrErr
+  id: ErrErr
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: ErrErr
+  nameWithType: LuauStatus.ErrErr
+  fullName: LuauInterop.Runtime.LuauStatus.ErrErr
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: ErrErr
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 9
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: ErrErr = 5
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauStatus.Break
+  commentId: F:LuauInterop.Runtime.LuauStatus.Break
+  id: Break
+  parent: LuauInterop.Runtime.LuauStatus
+  langs:
+  - csharp
+  - vb
+  name: Break
+  nameWithType: LuauStatus.Break
+  fullName: LuauInterop.Runtime.LuauStatus.Break
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/Runtime/LuauStatus.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Break
+    path: ../src/LuauInterop/Runtime/LuauStatus.cs
+    startLine: 10
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Runtime
+  syntax:
+    content: Break = 6
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+references:
+- uid: LuauInterop.Runtime
+  commentId: N:LuauInterop.Runtime
+  href: LuauInterop.html
+  name: LuauInterop.Runtime
+  nameWithType: LuauInterop.Runtime
+  fullName: LuauInterop.Runtime
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+- uid: LuauInterop.Runtime.LuauStatus
+  commentId: T:LuauInterop.Runtime.LuauStatus
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauStatus.html
+  name: LuauStatus
+  nameWithType: LuauStatus
+  fullName: LuauInterop.Runtime.LuauStatus

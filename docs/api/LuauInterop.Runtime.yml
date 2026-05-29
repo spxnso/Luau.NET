@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Runtime
+  commentId: N:LuauInterop.Runtime
+  id: LuauInterop.Runtime
+  children:
+  - LuauInterop.Runtime.LuauCoStatus
+  - LuauInterop.Runtime.LuauGCOperation
+  - LuauInterop.Runtime.LuauStatus
+  - LuauInterop.Runtime.LuauThread
+  langs:
+  - csharp
+  - vb
+  name: LuauInterop.Runtime
+  nameWithType: LuauInterop.Runtime
+  fullName: LuauInterop.Runtime
+  type: Namespace
+  assemblies:
+  - LuauInterop
+references:
+- uid: LuauInterop.Runtime.LuauCoStatus
+  commentId: T:LuauInterop.Runtime.LuauCoStatus
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauCoStatus.html
+  name: LuauCoStatus
+  nameWithType: LuauCoStatus
+  fullName: LuauInterop.Runtime.LuauCoStatus
+- uid: LuauInterop.Runtime.LuauGCOperation
+  commentId: T:LuauInterop.Runtime.LuauGCOperation
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauGCOperation.html
+  name: LuauGCOperation
+  nameWithType: LuauGCOperation
+  fullName: LuauInterop.Runtime.LuauGCOperation
+- uid: LuauInterop.Runtime.LuauStatus
+  commentId: T:LuauInterop.Runtime.LuauStatus
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauStatus.html
+  name: LuauStatus
+  nameWithType: LuauStatus
+  fullName: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime.LuauThread
+  commentId: T:LuauInterop.Runtime.LuauThread
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauThread.html
+  name: LuauThread
+  nameWithType: LuauThread
+  fullName: LuauInterop.Runtime.LuauThread
+- uid: LuauInterop.Runtime
+  commentId: N:LuauInterop.Runtime
+  href: LuauInterop.html
+  name: LuauInterop.Runtime
+  nameWithType: LuauInterop.Runtime
+  fullName: LuauInterop.Runtime
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html

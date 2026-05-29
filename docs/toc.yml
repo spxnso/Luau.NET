@@ -1,0 +1,16 @@
+- name: Introduction
+  href: index.md
+- name: Documentation
+  items:
+    - name: Installation
+      href: docs/installation.md
+    - name: Quick Start
+      href: docs/quickstart.md
+    - name: Values and Types
+      href: docs/values.md
+    - name: Compilation
+      href: docs/compilation.md
+    - name: Resource Management
+      href: docs/disposables.md
+- name: API Reference
+  href: api/

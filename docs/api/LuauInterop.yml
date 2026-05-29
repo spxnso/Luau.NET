@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop
+  commentId: N:LuauInterop
+  id: LuauInterop
+  children:
+  - LuauInterop.Luau
+  - LuauInterop.LuauBase
+  - LuauInterop.LuauChunk
+  - LuauInterop.LuauException
+  - LuauInterop.LuauType
+  - LuauInterop.LuauValue
+  langs:
+  - csharp
+  - vb
+  name: LuauInterop
+  nameWithType: LuauInterop
+  fullName: LuauInterop
+  type: Namespace
+  assemblies:
+  - LuauInterop
+references:
+- uid: LuauInterop.Luau
+  commentId: T:LuauInterop.Luau
+  parent: LuauInterop
+  href: LuauInterop.Luau.html
+  name: Luau
+  nameWithType: Luau
+  fullName: LuauInterop.Luau
+- uid: LuauInterop.LuauBase
+  commentId: T:LuauInterop.LuauBase
+  parent: LuauInterop
+  href: LuauInterop.LuauBase.html
+  name: LuauBase
+  nameWithType: LuauBase
+  fullName: LuauInterop.LuauBase
+- uid: LuauInterop.LuauChunk
+  commentId: T:LuauInterop.LuauChunk
+  parent: LuauInterop
+  href: LuauInterop.LuauChunk.html
+  name: LuauChunk
+  nameWithType: LuauChunk
+  fullName: LuauInterop.LuauChunk
+- uid: LuauInterop.LuauException
+  commentId: T:LuauInterop.LuauException
+  href: LuauInterop.LuauException.html
+  name: LuauException
+  nameWithType: LuauException
+  fullName: LuauInterop.LuauException
+- uid: LuauInterop.LuauType
+  commentId: T:LuauInterop.LuauType
+  parent: LuauInterop
+  href: LuauInterop.LuauType.html
+  name: LuauType
+  nameWithType: LuauType
+  fullName: LuauInterop.LuauType
+- uid: LuauInterop.LuauValue
+  commentId: T:LuauInterop.LuauValue
+  parent: LuauInterop
+  href: LuauInterop.LuauValue.html
+  name: LuauValue
+  nameWithType: LuauValue
+  fullName: LuauInterop.LuauValue
+- uid: LuauInterop
+  commentId: N:LuauInterop
+  href: LuauInterop.html
+  name: LuauInterop
+  nameWithType: LuauInterop
+  fullName: LuauInterop

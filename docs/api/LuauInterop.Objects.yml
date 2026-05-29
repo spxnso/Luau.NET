@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Objects
+  commentId: N:LuauInterop.Objects
+  id: LuauInterop.Objects
+  children:
+  - LuauInterop.Objects.LuauBuffer
+  - LuauInterop.Objects.LuauFunction
+  - LuauInterop.Objects.LuauTable
+  - LuauInterop.Objects.LuauUserData
+  - LuauInterop.Objects.LuauVector
+  langs:
+  - csharp
+  - vb
+  name: LuauInterop.Objects
+  nameWithType: LuauInterop.Objects
+  fullName: LuauInterop.Objects
+  type: Namespace
+  assemblies:
+  - LuauInterop
+references:
+- uid: LuauInterop.Objects.LuauBuffer
+  commentId: T:LuauInterop.Objects.LuauBuffer
+  href: LuauInterop.Objects.LuauBuffer.html
+  name: LuauBuffer
+  nameWithType: LuauBuffer
+  fullName: LuauInterop.Objects.LuauBuffer
+- uid: LuauInterop.Objects.LuauFunction
+  commentId: T:LuauInterop.Objects.LuauFunction
+  href: LuauInterop.Objects.LuauFunction.html
+  name: LuauFunction
+  nameWithType: LuauFunction
+  fullName: LuauInterop.Objects.LuauFunction
+- uid: LuauInterop.Objects.LuauTable
+  commentId: T:LuauInterop.Objects.LuauTable
+  href: LuauInterop.Objects.LuauTable.html
+  name: LuauTable
+  nameWithType: LuauTable
+  fullName: LuauInterop.Objects.LuauTable
+- uid: LuauInterop.Objects.LuauUserData
+  commentId: T:LuauInterop.Objects.LuauUserData
+  href: LuauInterop.Objects.LuauUserData.html
+  name: LuauUserData
+  nameWithType: LuauUserData
+  fullName: LuauInterop.Objects.LuauUserData
+- uid: LuauInterop.Objects.LuauVector
+  commentId: T:LuauInterop.Objects.LuauVector
+  href: LuauInterop.Objects.LuauVector.html
+  name: LuauVector
+  nameWithType: LuauVector
+  fullName: LuauInterop.Objects.LuauVector

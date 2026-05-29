@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Compilation.LuauCompileOptions
+  commentId: T:LuauInterop.Compilation.LuauCompileOptions
+  id: LuauCompileOptions
+  parent: LuauInterop.Compilation
+  children:
+  - LuauInterop.Compilation.LuauCompileOptions.CoverageLevel
+  - LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+  - LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+  - LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+  langs:
+  - csharp
+  - vb
+  name: LuauCompileOptions
+  nameWithType: LuauCompileOptions
+  fullName: LuauInterop.Compilation.LuauCompileOptions
+  type: Class
+  source:
+    remote:
+      path: src/LuauInterop/Compilation/LuauCompileOptions.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauCompileOptions
+    path: ../src/LuauInterop/Compilation/LuauCompileOptions.cs
+    startLine: 5
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Compilation
+  summary: Represents the options for compiling a Luau chunk.
+  example: []
+  syntax:
+    content: public sealed class LuauCompileOptions
+    content.vb: Public NotInheritable Class LuauCompileOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+  commentId: P:LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+  id: OptimizationLevel
+  parent: LuauInterop.Compilation.LuauCompileOptions
+  langs:
+  - csharp
+  - vb
+  name: OptimizationLevel
+  nameWithType: LuauCompileOptions.OptimizationLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Compilation/LuauCompileOptions.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OptimizationLevel
+    path: ../src/LuauInterop/Compilation/LuauCompileOptions.cs
+    startLine: 14
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Compilation
+  summary: >-
+    Sets Luau compiler optimization level.
+
+    Possible values are:
+
+    0 - no optimizations
+
+    1 - baseline optimization level that doesn’t prevent debuggability (default)
+
+    2 - aggressive optimizations that may make debugging difficult
+  example: []
+  syntax:
+    content: public int OptimizationLevel { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property OptimizationLevel As Integer
+  overload: LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel*
+- uid: LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+  commentId: P:LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+  id: DebugLevel
+  parent: LuauInterop.Compilation.LuauCompileOptions
+  langs:
+  - csharp
+  - vb
+  name: DebugLevel
+  nameWithType: LuauCompileOptions.DebugLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Compilation/LuauCompileOptions.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: DebugLevel
+    path: ../src/LuauInterop/Compilation/LuauCompileOptions.cs
+    startLine: 23
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Compilation
+  summary: >-
+    Sets Luau compiler debug level.
+
+    Possible values are:
+
+    0 - no debug information emitted
+
+    1 - line info and function names only; sufficient for backtraces (default)
+
+    2 - full debug info with local and upvalue names; necessary for debuggers
+  example: []
+  syntax:
+    content: public int DebugLevel { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DebugLevel As Integer
+  overload: LuauInterop.Compilation.LuauCompileOptions.DebugLevel*
+- uid: LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+  commentId: P:LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+  id: TypeInfoLevel
+  parent: LuauInterop.Compilation.LuauCompileOptions
+  langs:
+  - csharp
+  - vb
+  name: TypeInfoLevel
+  nameWithType: LuauCompileOptions.TypeInfoLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Compilation/LuauCompileOptions.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: TypeInfoLevel
+    path: ../src/LuauInterop/Compilation/LuauCompileOptions.cs
+    startLine: 31
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Compilation
+  summary: >-
+    Sets Luau type information level used to guide native code generation decisions.
+
+    Possible values are:
+
+    0 - generate for native modules (default)
+
+    1 - generate for all modules
+  example: []
+  syntax:
+    content: public int TypeInfoLevel { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TypeInfoLevel As Integer
+  overload: LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel*
+- uid: LuauInterop.Compilation.LuauCompileOptions.CoverageLevel
+  commentId: P:LuauInterop.Compilation.LuauCompileOptions.CoverageLevel
+  id: CoverageLevel
+  parent: LuauInterop.Compilation.LuauCompileOptions
+  langs:
+  - csharp
+  - vb
+  name: CoverageLevel
+  nameWithType: LuauCompileOptions.CoverageLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.CoverageLevel
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Compilation/LuauCompileOptions.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: CoverageLevel
+    path: ../src/LuauInterop/Compilation/LuauCompileOptions.cs
+    startLine: 40
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop.Compilation
+  summary: >-
+    Sets Luau compiler code coverage level.
+
+    Possible values are:
+
+    0 - no code coverage support (default)
+
+    1 - statement coverage
+
+    2 - statement and expression coverage (verbose)
+  example: []
+  syntax:
+    content: public int CoverageLevel { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CoverageLevel As Integer
+  overload: LuauInterop.Compilation.LuauCompileOptions.CoverageLevel*
+references:
+- uid: LuauInterop.Compilation
+  commentId: N:LuauInterop.Compilation
+  href: LuauInterop.html
+  name: LuauInterop.Compilation
+  nameWithType: LuauInterop.Compilation
+  fullName: LuauInterop.Compilation
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel*
+  commentId: Overload:LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+  href: LuauInterop.Compilation.LuauCompileOptions.html#LuauInterop_Compilation_LuauCompileOptions_OptimizationLevel
+  name: OptimizationLevel
+  nameWithType: LuauCompileOptions.OptimizationLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.OptimizationLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LuauInterop.Compilation.LuauCompileOptions.DebugLevel*
+  commentId: Overload:LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+  href: LuauInterop.Compilation.LuauCompileOptions.html#LuauInterop_Compilation_LuauCompileOptions_DebugLevel
+  name: DebugLevel
+  nameWithType: LuauCompileOptions.DebugLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.DebugLevel
+- uid: LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel*
+  commentId: Overload:LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+  href: LuauInterop.Compilation.LuauCompileOptions.html#LuauInterop_Compilation_LuauCompileOptions_TypeInfoLevel
+  name: TypeInfoLevel
+  nameWithType: LuauCompileOptions.TypeInfoLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.TypeInfoLevel
+- uid: LuauInterop.Compilation.LuauCompileOptions.CoverageLevel*
+  commentId: Overload:LuauInterop.Compilation.LuauCompileOptions.CoverageLevel
+  href: LuauInterop.Compilation.LuauCompileOptions.html#LuauInterop_Compilation_LuauCompileOptions_CoverageLevel
+  name: CoverageLevel
+  nameWithType: LuauCompileOptions.CoverageLevel
+  fullName: LuauInterop.Compilation.LuauCompileOptions.CoverageLevel

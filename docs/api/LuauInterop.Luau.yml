@@ -1,0 +1,1755 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.Luau
+  commentId: T:LuauInterop.Luau
+  id: Luau
+  parent: LuauInterop
+  children:
+  - LuauInterop.Luau.#ctor
+  - LuauInterop.Luau.Compile(System.String,LuauInterop.Compilation.LuauCompileOptions)
+  - LuauInterop.Luau.CreateThread
+  - LuauInterop.Luau.Dispose
+  - LuauInterop.Luau.Dispose(System.Boolean)
+  - LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk,System.String)
+  - LuauInterop.Luau.DoString(System.String,System.String)
+  - LuauInterop.Luau.Finalize
+  - LuauInterop.Luau.GetValue(System.Int32)
+  - LuauInterop.Luau.IsDisposed
+  - LuauInterop.Luau.Item(System.String)
+  - LuauInterop.Luau.LoadString(System.String,System.String)
+  - LuauInterop.Luau.OpenBase
+  - LuauInterop.Luau.OpenBit32
+  - LuauInterop.Luau.OpenBuffer
+  - LuauInterop.Luau.OpenCoroutine
+  - LuauInterop.Luau.OpenDebug
+  - LuauInterop.Luau.OpenInteger
+  - LuauInterop.Luau.OpenLibraries
+  - LuauInterop.Luau.OpenMath
+  - LuauInterop.Luau.OpenOS
+  - LuauInterop.Luau.OpenString
+  - LuauInterop.Luau.OpenTable
+  - LuauInterop.Luau.OpenUtf8
+  - LuauInterop.Luau.OpenVector
+  - LuauInterop.Luau.Pop(System.Int32)
+  - LuauInterop.Luau.Push(LuauInterop.LuauValue)
+  - LuauInterop.Luau.SetFFlag(System.String,System.Boolean)
+  - LuauInterop.Luau.State
+  langs:
+  - csharp
+  - vb
+  name: Luau
+  nameWithType: Luau
+  fullName: LuauInterop.Luau
+  type: Class
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Luau
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 13
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Represents a Luau instance.
+  example: []
+  syntax:
+    content: 'public class Luau : IDisposable'
+    content.vb: Public Class Luau Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LuauInterop.Luau.State
+  commentId: P:LuauInterop.Luau.State
+  id: State
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: Luau.State
+  fullName: LuauInterop.Luau.State
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: State
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 18
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the underlying native Luau state.
+  example: []
+  syntax:
+    content: public LuaState State { get; }
+    parameters: []
+    return:
+      type: LuauInterop.Native.LuaState
+    content.vb: Public Property State As LuaState
+  overload: LuauInterop.Luau.State*
+- uid: LuauInterop.Luau.IsDisposed
+  commentId: P:LuauInterop.Luau.IsDisposed
+  id: IsDisposed
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: Luau.IsDisposed
+  fullName: LuauInterop.Luau.IsDisposed
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: IsDisposed
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 23
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets a value indicating whether this instance has been disposed.
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDisposed As Boolean
+  overload: LuauInterop.Luau.IsDisposed*
+- uid: LuauInterop.Luau.#ctor
+  commentId: M:LuauInterop.Luau.#ctor
+  id: '#ctor'
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Luau()
+  nameWithType: Luau.Luau()
+  fullName: LuauInterop.Luau.Luau()
+  type: Constructor
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: .ctor
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 29
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Initializes a new Luau instance and allocates a fresh native state.
+  example: []
+  syntax:
+    content: public Luau()
+    content.vb: Public Sub New()
+  overload: LuauInterop.Luau.#ctor*
+  exceptions:
+  - type: System.OutOfMemoryException
+    commentId: T:System.OutOfMemoryException
+    description: Thrown if the native state could not be allocated.
+  nameWithType.vb: Luau.New()
+  fullName.vb: LuauInterop.Luau.New()
+  name.vb: New()
+- uid: LuauInterop.Luau.Item(System.String)
+  commentId: P:LuauInterop.Luau.Item(System.String)
+  id: Item(System.String)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: Luau.this[string]
+  fullName: LuauInterop.Luau.this[string]
+  type: Property
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: this[]
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 41
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets or sets a global variable by name.
+  example: []
+  syntax:
+    content: public object? this[string name] { get; set; }
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the global variable.
+    return:
+      type: System.Object
+      description: The value of the global, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if it is nil.
+    content.vb: Public Default Property this[](name As String) As Object
+  overload: LuauInterop.Luau.Item*
+  nameWithType.vb: Luau.this[](String)
+  fullName.vb: LuauInterop.Luau.this[](String)
+  name.vb: this[](String)
+- uid: LuauInterop.Luau.Finalize
+  commentId: M:LuauInterop.Luau.Finalize
+  id: Finalize
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: ~Luau()
+  nameWithType: Luau.~Luau()
+  fullName: LuauInterop.Luau.~Luau()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Finalize
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 64
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: protected ~Luau()
+    content.vb: 'Protected '
+  overload: LuauInterop.Luau.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: LuauInterop.Luau.Dispose
+  commentId: M:LuauInterop.Luau.Dispose
+  id: Dispose
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Luau.Dispose()
+  fullName: LuauInterop.Luau.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Dispose
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 66
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: LuauInterop.Luau.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: LuauInterop.Luau.Dispose(System.Boolean)
+  commentId: M:LuauInterop.Luau.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: Luau.Dispose(bool)
+  fullName: LuauInterop.Luau.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Dispose
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 72
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: LuauInterop.Luau.Dispose*
+  nameWithType.vb: Luau.Dispose(Boolean)
+  fullName.vb: LuauInterop.Luau.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: LuauInterop.Luau.Compile(System.String,LuauInterop.Compilation.LuauCompileOptions)
+  commentId: M:LuauInterop.Luau.Compile(System.String,LuauInterop.Compilation.LuauCompileOptions)
+  id: Compile(System.String,LuauInterop.Compilation.LuauCompileOptions)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Compile(string, LuauCompileOptions?)
+  nameWithType: Luau.Compile(string, LuauCompileOptions?)
+  fullName: LuauInterop.Luau.Compile(string, LuauInterop.Compilation.LuauCompileOptions?)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Compile
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 90
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Compiles a Luau source string into a <xref href="LuauInterop.LuauChunk" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LuauChunk Compile(string chunk, LuauCompileOptions? options = null)
+    parameters:
+    - id: chunk
+      type: System.String
+      description: The Luau source code to compile.
+    - id: options
+      type: LuauInterop.Compilation.LuauCompileOptions
+      description: Optional compiler options. Pass <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use defaults.
+    return:
+      type: LuauInterop.LuauChunk
+      description: A compiled <xref href="LuauInterop.LuauChunk" data-throw-if-not-resolved="false"></xref>. Dispose it after use.
+    content.vb: Public Function Compile(chunk As String, options As LuauCompileOptions = Nothing) As LuauChunk
+  overload: LuauInterop.Luau.Compile*
+  nameWithType.vb: Luau.Compile(String, LuauCompileOptions)
+  fullName.vb: LuauInterop.Luau.Compile(String, LuauInterop.Compilation.LuauCompileOptions)
+  name.vb: Compile(String, LuauCompileOptions)
+- uid: LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk,System.String)
+  commentId: M:LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk,System.String)
+  id: DoChunk(LuauInterop.LuauChunk,System.String)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: DoChunk(LuauChunk, string)
+  nameWithType: Luau.DoChunk(LuauChunk, string)
+  fullName: LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk, string)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: DoChunk
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 101
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Executes a pre-compiled <xref href="LuauInterop.LuauChunk" data-throw-if-not-resolved="false"></xref>, returning any values it produces.
+  example: []
+  syntax:
+    content: public object?[] DoChunk(LuauChunk chunk, string chunkName = "chunk")
+    parameters:
+    - id: chunk
+      type: LuauInterop.LuauChunk
+      description: The compiled chunk to execute.
+    - id: chunkName
+      type: System.String
+      description: A name for the chunk used in error messages. Defaults to <code>"chunk"</code>.
+    return:
+      type: System.Object[]
+      description: An array of values returned by the chunk, or an empty array if it returns nothing.
+    content.vb: Public Function DoChunk(chunk As LuauChunk, chunkName As String = "chunk") As Object()
+  overload: LuauInterop.Luau.DoChunk*
+  exceptions:
+  - type: LuauInterop.LuauException
+    commentId: T:LuauInterop.LuauException
+    description: Thrown if execution fails.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+  nameWithType.vb: Luau.DoChunk(LuauChunk, String)
+  fullName.vb: LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk, String)
+  name.vb: DoChunk(LuauChunk, String)
+- uid: LuauInterop.Luau.DoString(System.String,System.String)
+  commentId: M:LuauInterop.Luau.DoString(System.String,System.String)
+  id: DoString(System.String,System.String)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: DoString(string, string)
+  nameWithType: Luau.DoString(string, string)
+  fullName: LuauInterop.Luau.DoString(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: DoString
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 120
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Compiles and executes a Luau source string, returning any values it produces.
+  example: []
+  syntax:
+    content: public object?[] DoString(string chunk, string chunkName = "chunk")
+    parameters:
+    - id: chunk
+      type: System.String
+      description: The Luau source code to execute.
+    - id: chunkName
+      type: System.String
+      description: A name for the chunk used in error messages. Defaults to <code>"chunk"</code>.
+    return:
+      type: System.Object[]
+      description: An array of values returned by the chunk, or an empty array if it returns nothing.
+    content.vb: Public Function DoString(chunk As String, chunkName As String = "chunk") As Object()
+  overload: LuauInterop.Luau.DoString*
+  exceptions:
+  - type: LuauInterop.LuauException
+    commentId: T:LuauInterop.LuauException
+    description: Thrown if compilation or execution fails.
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+  nameWithType.vb: Luau.DoString(String, String)
+  fullName.vb: LuauInterop.Luau.DoString(String, String)
+  name.vb: DoString(String, String)
+- uid: LuauInterop.Luau.LoadString(System.String,System.String)
+  commentId: M:LuauInterop.Luau.LoadString(System.String,System.String)
+  id: LoadString(System.String,System.String)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: LoadString(string, string)
+  nameWithType: Luau.LoadString(string, string)
+  fullName: LuauInterop.Luau.LoadString(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LoadString
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 139
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: >-
+    Compiles a Luau source string and loads it onto the stack as a callable function,
+
+    without executing it.
+  example: []
+  syntax:
+    content: public LuauStatus LoadString(string chunk, string chunkName = "chunk")
+    parameters:
+    - id: chunk
+      type: System.String
+      description: The Luau source code to compile and load.
+    - id: chunkName
+      type: System.String
+      description: A name for the chunk used in error messages. Defaults to <code>"chunk"</code>.
+    return:
+      type: LuauInterop.Runtime.LuauStatus
+      description: <xref href="LuauInterop.Runtime.LuauStatus.OK" data-throw-if-not-resolved="false"></xref> on success, or an error status if compilation or loading fails.
+    content.vb: Public Function LoadString(chunk As String, chunkName As String = "chunk") As LuauStatus
+  overload: LuauInterop.Luau.LoadString*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+  nameWithType.vb: Luau.LoadString(String, String)
+  fullName.vb: LuauInterop.Luau.LoadString(String, String)
+  name.vb: LoadString(String, String)
+- uid: LuauInterop.Luau.CreateThread
+  commentId: M:LuauInterop.Luau.CreateThread
+  id: CreateThread
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: CreateThread()
+  nameWithType: Luau.CreateThread()
+  fullName: LuauInterop.Luau.CreateThread()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: CreateThread
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 151
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Creates a new Luau coroutine thread.
+  example: []
+  syntax:
+    content: public LuauThread CreateThread()
+    return:
+      type: LuauInterop.Runtime.LuauThread
+      description: A <xref href="LuauInterop.Runtime.LuauThread" data-throw-if-not-resolved="false"></xref> that can be resumed independently.
+    content.vb: Public Function CreateThread() As LuauThread
+  overload: LuauInterop.Luau.CreateThread*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenLibraries
+  commentId: M:LuauInterop.Luau.OpenLibraries
+  id: OpenLibraries
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenLibraries()
+  nameWithType: Luau.OpenLibraries()
+  fullName: LuauInterop.Luau.OpenLibraries()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenLibraries
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 164
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public void OpenLibraries()
+    content.vb: Public Sub OpenLibraries()
+  overload: LuauInterop.Luau.OpenLibraries*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenBase
+  commentId: M:LuauInterop.Luau.OpenBase
+  id: OpenBase
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenBase()
+  nameWithType: Luau.OpenBase()
+  fullName: LuauInterop.Luau.OpenBase()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenBase
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 172
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenBase()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenBase() As Integer
+  overload: LuauInterop.Luau.OpenBase*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenBit32
+  commentId: M:LuauInterop.Luau.OpenBit32
+  id: OpenBit32
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenBit32()
+  nameWithType: Luau.OpenBit32()
+  fullName: LuauInterop.Luau.OpenBit32()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenBit32
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 175
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenBit32()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenBit32() As Integer
+  overload: LuauInterop.Luau.OpenBit32*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenBuffer
+  commentId: M:LuauInterop.Luau.OpenBuffer
+  id: OpenBuffer
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenBuffer()
+  nameWithType: Luau.OpenBuffer()
+  fullName: LuauInterop.Luau.OpenBuffer()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenBuffer
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 178
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenBuffer()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenBuffer() As Integer
+  overload: LuauInterop.Luau.OpenBuffer*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenCoroutine
+  commentId: M:LuauInterop.Luau.OpenCoroutine
+  id: OpenCoroutine
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenCoroutine()
+  nameWithType: Luau.OpenCoroutine()
+  fullName: LuauInterop.Luau.OpenCoroutine()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenCoroutine
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 181
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenCoroutine()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenCoroutine() As Integer
+  overload: LuauInterop.Luau.OpenCoroutine*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenDebug
+  commentId: M:LuauInterop.Luau.OpenDebug
+  id: OpenDebug
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenDebug()
+  nameWithType: Luau.OpenDebug()
+  fullName: LuauInterop.Luau.OpenDebug()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenDebug
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 184
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenDebug()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenDebug() As Integer
+  overload: LuauInterop.Luau.OpenDebug*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenInteger
+  commentId: M:LuauInterop.Luau.OpenInteger
+  id: OpenInteger
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenInteger()
+  nameWithType: Luau.OpenInteger()
+  fullName: LuauInterop.Luau.OpenInteger()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenInteger
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 187
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenInteger()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenInteger() As Integer
+  overload: LuauInterop.Luau.OpenInteger*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenMath
+  commentId: M:LuauInterop.Luau.OpenMath
+  id: OpenMath
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenMath()
+  nameWithType: Luau.OpenMath()
+  fullName: LuauInterop.Luau.OpenMath()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenMath
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 190
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenMath()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenMath() As Integer
+  overload: LuauInterop.Luau.OpenMath*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenOS
+  commentId: M:LuauInterop.Luau.OpenOS
+  id: OpenOS
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenOS()
+  nameWithType: Luau.OpenOS()
+  fullName: LuauInterop.Luau.OpenOS()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenOS
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 193
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenOS()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenOS() As Integer
+  overload: LuauInterop.Luau.OpenOS*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenString
+  commentId: M:LuauInterop.Luau.OpenString
+  id: OpenString
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenString()
+  nameWithType: Luau.OpenString()
+  fullName: LuauInterop.Luau.OpenString()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenString
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 196
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenString()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenString() As Integer
+  overload: LuauInterop.Luau.OpenString*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenTable
+  commentId: M:LuauInterop.Luau.OpenTable
+  id: OpenTable
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenTable()
+  nameWithType: Luau.OpenTable()
+  fullName: LuauInterop.Luau.OpenTable()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenTable
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 199
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenTable()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenTable() As Integer
+  overload: LuauInterop.Luau.OpenTable*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenUtf8
+  commentId: M:LuauInterop.Luau.OpenUtf8
+  id: OpenUtf8
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenUtf8()
+  nameWithType: Luau.OpenUtf8()
+  fullName: LuauInterop.Luau.OpenUtf8()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenUtf8
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 202
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenUtf8()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenUtf8() As Integer
+  overload: LuauInterop.Luau.OpenUtf8*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.OpenVector
+  commentId: M:LuauInterop.Luau.OpenVector
+  id: OpenVector
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: OpenVector()
+  nameWithType: Luau.OpenVector()
+  fullName: LuauInterop.Luau.OpenVector()
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: OpenVector
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 205
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Opens all standard Luau libraries into this state.
+  example: []
+  syntax:
+    content: public int OpenVector()
+    return:
+      type: System.Int32
+    content.vb: Public Function OpenVector() As Integer
+  overload: LuauInterop.Luau.OpenVector*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.Pop(System.Int32)
+  commentId: M:LuauInterop.Luau.Pop(System.Int32)
+  id: Pop(System.Int32)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Pop(int)
+  nameWithType: Luau.Pop(int)
+  fullName: LuauInterop.Luau.Pop(int)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Pop
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 213
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Pops <code class="paramref">n</code> values off the top of the stack.
+  example: []
+  syntax:
+    content: public void Pop(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+      description: The number of values to pop.
+    content.vb: Public Sub Pop(n As Integer)
+  overload: LuauInterop.Luau.Pop*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+  nameWithType.vb: Luau.Pop(Integer)
+  fullName.vb: LuauInterop.Luau.Pop(Integer)
+  name.vb: Pop(Integer)
+- uid: LuauInterop.Luau.Push(LuauInterop.LuauValue)
+  commentId: M:LuauInterop.Luau.Push(LuauInterop.LuauValue)
+  id: Push(LuauInterop.LuauValue)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: Push(LuauValue)
+  nameWithType: Luau.Push(LuauValue)
+  fullName: LuauInterop.Luau.Push(LuauInterop.LuauValue)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Push
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 224
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Pushes a <xref href="LuauInterop.LuauValue" data-throw-if-not-resolved="false"></xref> onto the stack.
+  example: []
+  syntax:
+    content: public void Push(LuauValue value)
+    parameters:
+    - id: value
+      type: LuauInterop.LuauValue
+      description: The value to push.
+    content.vb: Public Sub Push(value As LuauValue)
+  overload: LuauInterop.Luau.Push*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+- uid: LuauInterop.Luau.GetValue(System.Int32)
+  commentId: M:LuauInterop.Luau.GetValue(System.Int32)
+  id: GetValue(System.Int32)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: GetValue(int)
+  nameWithType: Luau.GetValue(int)
+  fullName: LuauInterop.Luau.GetValue(int)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: GetValue
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 236
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Gets the value at the specified index on the stack.
+  example: []
+  syntax:
+    content: public LuauValue GetValue(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the value to get.
+    return:
+      type: LuauInterop.LuauValue
+      description: The value at the specified index.
+    content.vb: Public Function GetValue(index As Integer) As LuauValue
+  overload: LuauInterop.Luau.GetValue*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if this instance has been disposed.
+  nameWithType.vb: Luau.GetValue(Integer)
+  fullName.vb: LuauInterop.Luau.GetValue(Integer)
+  name.vb: GetValue(Integer)
+- uid: LuauInterop.Luau.SetFFlag(System.String,System.Boolean)
+  commentId: M:LuauInterop.Luau.SetFFlag(System.String,System.Boolean)
+  id: SetFFlag(System.String,System.Boolean)
+  parent: LuauInterop.Luau
+  langs:
+  - csharp
+  - vb
+  name: SetFFlag(string, bool)
+  nameWithType: Luau.SetFFlag(string, bool)
+  fullName: LuauInterop.Luau.SetFFlag(string, bool)
+  type: Method
+  source:
+    remote:
+      path: src/LuauInterop/Luau.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: SetFFlag
+    path: ../src/LuauInterop/Luau.cs
+    startLine: 264
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Sets an FFlag in the Luau VM. FFlags are used to enable or disable experimental features.
+  example: []
+  syntax:
+    content: public void SetFFlag(string name, bool enabled)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the FFlag to set.
+    - id: enabled
+      type: System.Boolean
+      description: A value indicating whether the FFlag should be enabled.
+    content.vb: Public Sub SetFFlag(name As String, enabled As Boolean)
+  overload: LuauInterop.Luau.SetFFlag*
+  nameWithType.vb: Luau.SetFFlag(String, Boolean)
+  fullName.vb: LuauInterop.Luau.SetFFlag(String, Boolean)
+  name.vb: SetFFlag(String, Boolean)
+references:
+- uid: LuauInterop
+  commentId: N:LuauInterop
+  href: LuauInterop.html
+  name: LuauInterop
+  nameWithType: LuauInterop
+  fullName: LuauInterop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LuauInterop.Luau.State*
+  commentId: Overload:LuauInterop.Luau.State
+  href: LuauInterop.Luau.html#LuauInterop_Luau_State
+  name: State
+  nameWithType: Luau.State
+  fullName: LuauInterop.Luau.State
+- uid: LuauInterop.Native.LuaState
+  commentId: T:LuauInterop.Native.LuaState
+  parent: LuauInterop.Native
+  href: LuauInterop.Native.LuaState.html
+  name: LuaState
+  nameWithType: LuaState
+  fullName: LuauInterop.Native.LuaState
+- uid: LuauInterop.Native
+  commentId: N:LuauInterop.Native
+  href: LuauInterop.html
+  name: LuauInterop.Native
+  nameWithType: LuauInterop.Native
+  fullName: LuauInterop.Native
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Native
+    name: Native
+    href: LuauInterop.Native.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Native
+    name: Native
+    href: LuauInterop.Native.html
+- uid: LuauInterop.Luau.IsDisposed*
+  commentId: Overload:LuauInterop.Luau.IsDisposed
+  href: LuauInterop.Luau.html#LuauInterop_Luau_IsDisposed
+  name: IsDisposed
+  nameWithType: Luau.IsDisposed
+  fullName: LuauInterop.Luau.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.OutOfMemoryException
+  commentId: T:System.OutOfMemoryException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.outofmemoryexception
+  name: OutOfMemoryException
+  nameWithType: OutOfMemoryException
+  fullName: System.OutOfMemoryException
+- uid: LuauInterop.Luau.#ctor*
+  commentId: Overload:LuauInterop.Luau.#ctor
+  href: LuauInterop.Luau.html#LuauInterop_Luau__ctor
+  name: Luau
+  nameWithType: Luau.Luau
+  fullName: LuauInterop.Luau.Luau
+  nameWithType.vb: Luau.New
+  fullName.vb: LuauInterop.Luau.New
+  name.vb: New
+- uid: LuauInterop.Luau.Item*
+  commentId: Overload:LuauInterop.Luau.Item
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Item_System_String_
+  name: this
+  nameWithType: Luau.this
+  fullName: LuauInterop.Luau.this
+  nameWithType.vb: Luau.this[]
+  fullName.vb: LuauInterop.Luau.this[]
+  name.vb: this[]
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: LuauInterop.Luau.Finalize*
+  commentId: Overload:LuauInterop.Luau.Finalize
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Finalize
+  name: ~Luau
+  nameWithType: Luau.~Luau
+  fullName: LuauInterop.Luau.~Luau
+  spec.csharp:
+  - name: "~"
+  - uid: LuauInterop.Luau.Finalize*
+    name: Luau
+    href: LuauInterop.Luau.html#LuauInterop_Luau_Finalize
+- uid: LuauInterop.Luau.Dispose*
+  commentId: Overload:LuauInterop.Luau.Dispose
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Dispose
+  name: Dispose
+  nameWithType: Luau.Dispose
+  fullName: LuauInterop.Luau.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: LuauInterop.LuauChunk
+  commentId: T:LuauInterop.LuauChunk
+  parent: LuauInterop
+  href: LuauInterop.LuauChunk.html
+  name: LuauChunk
+  nameWithType: LuauChunk
+  fullName: LuauInterop.LuauChunk
+- uid: LuauInterop.Luau.Compile*
+  commentId: Overload:LuauInterop.Luau.Compile
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Compile_System_String_LuauInterop_Compilation_LuauCompileOptions_
+  name: Compile
+  nameWithType: Luau.Compile
+  fullName: LuauInterop.Luau.Compile
+- uid: LuauInterop.Compilation.LuauCompileOptions
+  commentId: T:LuauInterop.Compilation.LuauCompileOptions
+  parent: LuauInterop.Compilation
+  href: LuauInterop.Compilation.LuauCompileOptions.html
+  name: LuauCompileOptions
+  nameWithType: LuauCompileOptions
+  fullName: LuauInterop.Compilation.LuauCompileOptions
+- uid: LuauInterop.Compilation
+  commentId: N:LuauInterop.Compilation
+  href: LuauInterop.html
+  name: LuauInterop.Compilation
+  nameWithType: LuauInterop.Compilation
+  fullName: LuauInterop.Compilation
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Compilation
+    name: Compilation
+    href: LuauInterop.Compilation.html
+- uid: LuauInterop.LuauException
+  commentId: T:LuauInterop.LuauException
+  href: LuauInterop.LuauException.html
+  name: LuauException
+  nameWithType: LuauException
+  fullName: LuauInterop.LuauException
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: LuauInterop.Luau.DoChunk*
+  commentId: Overload:LuauInterop.Luau.DoChunk
+  href: LuauInterop.Luau.html#LuauInterop_Luau_DoChunk_LuauInterop_LuauChunk_System_String_
+  name: DoChunk
+  nameWithType: Luau.DoChunk
+  fullName: LuauInterop.Luau.DoChunk
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: LuauInterop.Luau.DoString*
+  commentId: Overload:LuauInterop.Luau.DoString
+  href: LuauInterop.Luau.html#LuauInterop_Luau_DoString_System_String_System_String_
+  name: DoString
+  nameWithType: Luau.DoString
+  fullName: LuauInterop.Luau.DoString
+- uid: LuauInterop.Runtime.LuauStatus.OK
+  commentId: F:LuauInterop.Runtime.LuauStatus.OK
+  href: LuauInterop.Runtime.LuauStatus.html#LuauInterop_Runtime_LuauStatus_OK
+  name: OK
+  nameWithType: LuauStatus.OK
+  fullName: LuauInterop.Runtime.LuauStatus.OK
+- uid: LuauInterop.Luau.LoadString*
+  commentId: Overload:LuauInterop.Luau.LoadString
+  href: LuauInterop.Luau.html#LuauInterop_Luau_LoadString_System_String_System_String_
+  name: LoadString
+  nameWithType: Luau.LoadString
+  fullName: LuauInterop.Luau.LoadString
+- uid: LuauInterop.Runtime.LuauStatus
+  commentId: T:LuauInterop.Runtime.LuauStatus
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauStatus.html
+  name: LuauStatus
+  nameWithType: LuauStatus
+  fullName: LuauInterop.Runtime.LuauStatus
+- uid: LuauInterop.Runtime
+  commentId: N:LuauInterop.Runtime
+  href: LuauInterop.html
+  name: LuauInterop.Runtime
+  nameWithType: LuauInterop.Runtime
+  fullName: LuauInterop.Runtime
+  spec.csharp:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+  spec.vb:
+  - uid: LuauInterop
+    name: LuauInterop
+    href: LuauInterop.html
+  - name: .
+  - uid: LuauInterop.Runtime
+    name: Runtime
+    href: LuauInterop.Runtime.html
+- uid: LuauInterop.Runtime.LuauThread
+  commentId: T:LuauInterop.Runtime.LuauThread
+  parent: LuauInterop.Runtime
+  href: LuauInterop.Runtime.LuauThread.html
+  name: LuauThread
+  nameWithType: LuauThread
+  fullName: LuauInterop.Runtime.LuauThread
+- uid: LuauInterop.Luau.CreateThread*
+  commentId: Overload:LuauInterop.Luau.CreateThread
+  href: LuauInterop.Luau.html#LuauInterop_Luau_CreateThread
+  name: CreateThread
+  nameWithType: Luau.CreateThread
+  fullName: LuauInterop.Luau.CreateThread
+- uid: LuauInterop.Luau.OpenLibraries*
+  commentId: Overload:LuauInterop.Luau.OpenLibraries
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenLibraries
+  name: OpenLibraries
+  nameWithType: Luau.OpenLibraries
+  fullName: LuauInterop.Luau.OpenLibraries
+- uid: LuauInterop.Luau.OpenBase*
+  commentId: Overload:LuauInterop.Luau.OpenBase
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenBase
+  name: OpenBase
+  nameWithType: Luau.OpenBase
+  fullName: LuauInterop.Luau.OpenBase
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LuauInterop.Luau.OpenBit32*
+  commentId: Overload:LuauInterop.Luau.OpenBit32
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenBit32
+  name: OpenBit32
+  nameWithType: Luau.OpenBit32
+  fullName: LuauInterop.Luau.OpenBit32
+- uid: LuauInterop.Luau.OpenBuffer*
+  commentId: Overload:LuauInterop.Luau.OpenBuffer
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenBuffer
+  name: OpenBuffer
+  nameWithType: Luau.OpenBuffer
+  fullName: LuauInterop.Luau.OpenBuffer
+- uid: LuauInterop.Luau.OpenCoroutine*
+  commentId: Overload:LuauInterop.Luau.OpenCoroutine
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenCoroutine
+  name: OpenCoroutine
+  nameWithType: Luau.OpenCoroutine
+  fullName: LuauInterop.Luau.OpenCoroutine
+- uid: LuauInterop.Luau.OpenDebug*
+  commentId: Overload:LuauInterop.Luau.OpenDebug
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenDebug
+  name: OpenDebug
+  nameWithType: Luau.OpenDebug
+  fullName: LuauInterop.Luau.OpenDebug
+- uid: LuauInterop.Luau.OpenInteger*
+  commentId: Overload:LuauInterop.Luau.OpenInteger
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenInteger
+  name: OpenInteger
+  nameWithType: Luau.OpenInteger
+  fullName: LuauInterop.Luau.OpenInteger
+- uid: LuauInterop.Luau.OpenMath*
+  commentId: Overload:LuauInterop.Luau.OpenMath
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenMath
+  name: OpenMath
+  nameWithType: Luau.OpenMath
+  fullName: LuauInterop.Luau.OpenMath
+- uid: LuauInterop.Luau.OpenOS*
+  commentId: Overload:LuauInterop.Luau.OpenOS
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenOS
+  name: OpenOS
+  nameWithType: Luau.OpenOS
+  fullName: LuauInterop.Luau.OpenOS
+- uid: LuauInterop.Luau.OpenString*
+  commentId: Overload:LuauInterop.Luau.OpenString
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenString
+  name: OpenString
+  nameWithType: Luau.OpenString
+  fullName: LuauInterop.Luau.OpenString
+- uid: LuauInterop.Luau.OpenTable*
+  commentId: Overload:LuauInterop.Luau.OpenTable
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenTable
+  name: OpenTable
+  nameWithType: Luau.OpenTable
+  fullName: LuauInterop.Luau.OpenTable
+- uid: LuauInterop.Luau.OpenUtf8*
+  commentId: Overload:LuauInterop.Luau.OpenUtf8
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenUtf8
+  name: OpenUtf8
+  nameWithType: Luau.OpenUtf8
+  fullName: LuauInterop.Luau.OpenUtf8
+- uid: LuauInterop.Luau.OpenVector*
+  commentId: Overload:LuauInterop.Luau.OpenVector
+  href: LuauInterop.Luau.html#LuauInterop_Luau_OpenVector
+  name: OpenVector
+  nameWithType: Luau.OpenVector
+  fullName: LuauInterop.Luau.OpenVector
+- uid: LuauInterop.Luau.Pop*
+  commentId: Overload:LuauInterop.Luau.Pop
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Pop_System_Int32_
+  name: Pop
+  nameWithType: Luau.Pop
+  fullName: LuauInterop.Luau.Pop
+- uid: LuauInterop.LuauValue
+  commentId: T:LuauInterop.LuauValue
+  parent: LuauInterop
+  href: LuauInterop.LuauValue.html
+  name: LuauValue
+  nameWithType: LuauValue
+  fullName: LuauInterop.LuauValue
+- uid: LuauInterop.Luau.Push*
+  commentId: Overload:LuauInterop.Luau.Push
+  href: LuauInterop.Luau.html#LuauInterop_Luau_Push_LuauInterop_LuauValue_
+  name: Push
+  nameWithType: Luau.Push
+  fullName: LuauInterop.Luau.Push
+- uid: LuauInterop.Luau.GetValue*
+  commentId: Overload:LuauInterop.Luau.GetValue
+  href: LuauInterop.Luau.html#LuauInterop_Luau_GetValue_System_Int32_
+  name: GetValue
+  nameWithType: Luau.GetValue
+  fullName: LuauInterop.Luau.GetValue
+- uid: LuauInterop.Luau.SetFFlag*
+  commentId: Overload:LuauInterop.Luau.SetFFlag
+  href: LuauInterop.Luau.html#LuauInterop_Luau_SetFFlag_System_String_System_Boolean_
+  name: SetFFlag
+  nameWithType: Luau.SetFFlag
+  fullName: LuauInterop.Luau.SetFFlag

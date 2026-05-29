@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: LuauInterop.LuauType
+  commentId: T:LuauInterop.LuauType
+  id: LuauType
+  parent: LuauInterop
+  children:
+  - LuauInterop.LuauType.Boolean
+  - LuauInterop.LuauType.Buffer
+  - LuauInterop.LuauType.Function
+  - LuauInterop.LuauType.Integer
+  - LuauInterop.LuauType.LightUserData
+  - LuauInterop.LuauType.Nil
+  - LuauInterop.LuauType.Number
+  - LuauInterop.LuauType.String
+  - LuauInterop.LuauType.Table
+  - LuauInterop.LuauType.Thread
+  - LuauInterop.LuauType.UserData
+  - LuauInterop.LuauType.Vector
+  langs:
+  - csharp
+  - vb
+  name: LuauType
+  nameWithType: LuauType
+  fullName: LuauInterop.LuauType
+  type: Enum
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LuauType
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 5
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  summary: Represents the type of a Lua value.
+  example: []
+  syntax:
+    content: public enum LuauType
+    content.vb: Public Enum LuauType
+- uid: LuauInterop.LuauType.Nil
+  commentId: F:LuauInterop.LuauType.Nil
+  id: Nil
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Nil
+  nameWithType: LuauType.Nil
+  fullName: LuauInterop.LuauType.Nil
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Nil
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 7
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Nil = 0
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Boolean
+  commentId: F:LuauInterop.LuauType.Boolean
+  id: Boolean
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: LuauType.Boolean
+  fullName: LuauInterop.LuauType.Boolean
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Boolean
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 8
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Boolean = 1
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.LightUserData
+  commentId: F:LuauInterop.LuauType.LightUserData
+  id: LightUserData
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: LightUserData
+  nameWithType: LuauType.LightUserData
+  fullName: LuauInterop.LuauType.LightUserData
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: LightUserData
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 9
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: LightUserData = 2
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Number
+  commentId: F:LuauInterop.LuauType.Number
+  id: Number
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: LuauType.Number
+  fullName: LuauInterop.LuauType.Number
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Number
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 10
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Number = 3
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Integer
+  commentId: F:LuauInterop.LuauType.Integer
+  id: Integer
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: LuauType.Integer
+  fullName: LuauInterop.LuauType.Integer
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Integer
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 11
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Integer = 4
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Vector
+  commentId: F:LuauInterop.LuauType.Vector
+  id: Vector
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Vector
+  nameWithType: LuauType.Vector
+  fullName: LuauInterop.LuauType.Vector
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Vector
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 12
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Vector = 5
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.String
+  commentId: F:LuauInterop.LuauType.String
+  id: String
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: LuauType.String
+  fullName: LuauInterop.LuauType.String
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: String
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 13
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: String = 6
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Table
+  commentId: F:LuauInterop.LuauType.Table
+  id: Table
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: LuauType.Table
+  fullName: LuauInterop.LuauType.Table
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Table
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 14
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Table = 7
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Function
+  commentId: F:LuauInterop.LuauType.Function
+  id: Function
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Function
+  nameWithType: LuauType.Function
+  fullName: LuauInterop.LuauType.Function
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Function
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 15
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Function = 8
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.UserData
+  commentId: F:LuauInterop.LuauType.UserData
+  id: UserData
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: UserData
+  nameWithType: LuauType.UserData
+  fullName: LuauInterop.LuauType.UserData
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: UserData
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 16
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: UserData = 9
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Thread
+  commentId: F:LuauInterop.LuauType.Thread
+  id: Thread
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Thread
+  nameWithType: LuauType.Thread
+  fullName: LuauInterop.LuauType.Thread
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Thread
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 17
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Thread = 10
+    return:
+      type: LuauInterop.LuauType
+- uid: LuauInterop.LuauType.Buffer
+  commentId: F:LuauInterop.LuauType.Buffer
+  id: Buffer
+  parent: LuauInterop.LuauType
+  langs:
+  - csharp
+  - vb
+  name: Buffer
+  nameWithType: LuauType.Buffer
+  fullName: LuauInterop.LuauType.Buffer
+  type: Field
+  source:
+    remote:
+      path: src/LuauInterop/LuauType.cs
+      branch: docs
+      repo: https://github.com/spxnso/LuauInterop
+    id: Buffer
+    path: ../src/LuauInterop/LuauType.cs
+    startLine: 18
+  assemblies:
+  - LuauInterop
+  namespace: LuauInterop
+  syntax:
+    content: Buffer = 11
+    return:
+      type: LuauInterop.LuauType
+references:
+- uid: LuauInterop
+  commentId: N:LuauInterop
+  href: LuauInterop.html
+  name: LuauInterop
+  nameWithType: LuauInterop
+  fullName: LuauInterop
+- uid: LuauInterop.LuauType
+  commentId: T:LuauInterop.LuauType
+  parent: LuauInterop
+  href: LuauInterop.LuauType.html
+  name: LuauType
+  nameWithType: LuauType
+  fullName: LuauInterop.LuauType
