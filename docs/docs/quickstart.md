@@ -94,11 +94,14 @@ using (co)
 ## Using FFlags
 
 Here's an example using fflags to use the newest Integer type and library.
+
 ```csharp
 using var luau = new Luau();
         
 luau.SetFFlag("LuauIntegerType", true);
 luau.SetFFlag("LuauIntegerLibrary", true);
+
+Console.WriteLine(luau.GetFFlag("LuauIntegerType")) // True
 
 luau.OpenLibraries();
 
