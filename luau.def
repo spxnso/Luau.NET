@@ -190,3 +190,7 @@ EXPORTS
 
     ; Memory
     lua_free
+
+    ; Fflags
+    luau_setfflag
+    luau_getfflag
