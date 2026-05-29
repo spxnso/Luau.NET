@@ -5,9 +5,8 @@
 Luau bindings for .NET
 
 [![NuGet](https://img.shields.io/nuget/v/LuauInterop.svg)](https://www.nuget.org/packages/LuauInterop)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/LuauInterop.svg)](https://www.nuget.org/packages/LuauInterop)
 [![CI](https://github.com/spxnso/LuauInterop/actions/workflows/ci.yml/badge.svg)](https://github.com/spxnso/LuauInterop/actions/workflows/ci.yml)
-[![License](https://img.shields.io/github/license/spxnso/LuauInterop.svg)](https://github.com/spxnso/LuauInterop/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -20,13 +19,7 @@ dotnet add package LuauInterop
 dotnet add package LuauInterop.Native
 ```
 
-## Quick Start
+## Documentation
 
-```csharp
-using var luau = new Luau.Luau();
-luau.OpenLibraries();
-
-var results = luau.DoString("return 1 + 1");
-Console.WriteLine(results[0]); // 2
-```
+Documentation can be found [here](https://spxnso.github.io/LuauInterop)
 
