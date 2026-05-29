@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Luau | LuauInterop </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Luau | LuauInterop ">
+      
+      <meta name="description" content="Represents a Luau instance.">
+      <link rel="icon" href="../images/icon-32x32.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spxnso/LuauInterop/new/master/apiSpec/new?filename=LuauInterop_Luau.md&amp;value=---%0Auid%3A%20LuauInterop.Luau%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-32x32.png" alt="LuauInterop">
+            LuauInterop
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LuauInterop.Luau">
+
+
+
+  <h1 id="LuauInterop_Luau" data-uid="LuauInterop.Luau" class="text-break">
+Class Luau  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LuauInterop.html">LuauInterop</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LuauInterop.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a Luau instance.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Luau : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Luau</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LuauInterop_Luau__ctor_" data-uid="LuauInterop.Luau.#ctor*"></a>
+
+  <h3 id="LuauInterop_Luau__ctor" data-uid="LuauInterop.Luau.#ctor">
+  Luau()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new Luau instance and allocates a fresh native state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Luau()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></dt>
+    <dd><p>Thrown if the native state could not be allocated.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="LuauInterop_Luau_IsDisposed_" data-uid="LuauInterop.Luau.IsDisposed*"></a>
+
+  <h3 id="LuauInterop_Luau_IsDisposed" data-uid="LuauInterop.Luau.IsDisposed">
+  IsDisposed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_Item_" data-uid="LuauInterop.Luau.Item*"></a>
+
+  <h3 id="LuauInterop_Luau_Item_System_String_" data-uid="LuauInterop.Luau.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a global variable by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? this[string name] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the global variable.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value of the global, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if it is nil.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_State_" data-uid="LuauInterop.Luau.State*"></a>
+
+  <h3 id="LuauInterop_Luau_State" data-uid="LuauInterop.Luau.State">
+  State
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the underlying native Luau state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuaState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.Native.LuaState.html">LuaState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LuauInterop_Luau_Compile_" data-uid="LuauInterop.Luau.Compile*"></a>
+
+  <h3 id="LuauInterop_Luau_Compile_System_String_LuauInterop_Compilation_LuauCompileOptions_" data-uid="LuauInterop.Luau.Compile(System.String,LuauInterop.Compilation.LuauCompileOptions)">
+  Compile(string, LuauCompileOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compiles a Luau source string into a <a class="xref" href="LuauInterop.LuauChunk.html">LuauChunk</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuauChunk Compile(string chunk, LuauCompileOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Luau source code to compile.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LuauInterop.Compilation.LuauCompileOptions.html">LuauCompileOptions</a></dt>
+    <dd><p>Optional compiler options. Pass <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use defaults.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.LuauChunk.html">LuauChunk</a></dt>
+    <dd><p>A compiled <a class="xref" href="LuauInterop.LuauChunk.html">LuauChunk</a>. Dispose it after use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_CreateThread_" data-uid="LuauInterop.Luau.CreateThread*"></a>
+
+  <h3 id="LuauInterop_Luau_CreateThread" data-uid="LuauInterop.Luau.CreateThread">
+  CreateThread()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new Luau coroutine thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuauThread CreateThread()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.Runtime.LuauThread.html">LuauThread</a></dt>
+    <dd><p>A <a class="xref" href="LuauInterop.Runtime.LuauThread.html">LuauThread</a> that can be resumed independently.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_Dispose_" data-uid="LuauInterop.Luau.Dispose*"></a>
+
+  <h3 id="LuauInterop_Luau_Dispose" data-uid="LuauInterop.Luau.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_Dispose_" data-uid="LuauInterop.Luau.Dispose*"></a>
+
+  <h3 id="LuauInterop_Luau_Dispose_System_Boolean_" data-uid="LuauInterop.Luau.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_DoChunk_" data-uid="LuauInterop.Luau.DoChunk*"></a>
+
+  <h3 id="LuauInterop_Luau_DoChunk_LuauInterop_LuauChunk_System_String_" data-uid="LuauInterop.Luau.DoChunk(LuauInterop.LuauChunk,System.String)">
+  DoChunk(LuauChunk, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes a pre-compiled <a class="xref" href="LuauInterop.LuauChunk.html">LuauChunk</a>, returning any values it produces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object?[] DoChunk(LuauChunk chunk, string chunkName = &quot;chunk&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="LuauInterop.LuauChunk.html">LuauChunk</a></dt>
+    <dd><p>The compiled chunk to execute.</p>
+</dd>
+    <dt><code>chunkName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A name for the chunk used in error messages. Defaults to <code>&quot;chunk&quot;</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>An array of values returned by the chunk, or an empty array if it returns nothing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.LuauException.html">LuauException</a></dt>
+    <dd><p>Thrown if execution fails.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_DoString_" data-uid="LuauInterop.Luau.DoString*"></a>
+
+  <h3 id="LuauInterop_Luau_DoString_System_String_System_String_" data-uid="LuauInterop.Luau.DoString(System.String,System.String)">
+  DoString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compiles and executes a Luau source string, returning any values it produces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object?[] DoString(string chunk, string chunkName = &quot;chunk&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Luau source code to execute.</p>
+</dd>
+    <dt><code>chunkName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A name for the chunk used in error messages. Defaults to <code>&quot;chunk&quot;</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>An array of values returned by the chunk, or an empty array if it returns nothing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.LuauException.html">LuauException</a></dt>
+    <dd><p>Thrown if compilation or execution fails.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_Finalize_" data-uid="LuauInterop.Luau.Finalize*"></a>
+
+  <h3 id="LuauInterop_Luau_Finalize" data-uid="LuauInterop.Luau.Finalize">
+  ~Luau()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~Luau()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Luau_GetValue_" data-uid="LuauInterop.Luau.GetValue*"></a>
+
+  <h3 id="LuauInterop_Luau_GetValue_System_Int32_" data-uid="LuauInterop.Luau.GetValue(System.Int32)">
+  GetValue(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value at the specified index on the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuauValue GetValue(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the value to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.LuauValue.html">LuauValue</a></dt>
+    <dd><p>The value at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_LoadString_" data-uid="LuauInterop.Luau.LoadString*"></a>
+
+  <h3 id="LuauInterop_Luau_LoadString_System_String_System_String_" data-uid="LuauInterop.Luau.LoadString(System.String,System.String)">
+  LoadString(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compiles a Luau source string and loads it onto the stack as a callable function,
+without executing it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LuauStatus LoadString(string chunk, string chunkName = &quot;chunk&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Luau source code to compile and load.</p>
+</dd>
+    <dt><code>chunkName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A name for the chunk used in error messages. Defaults to <code>&quot;chunk&quot;</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LuauInterop.Runtime.LuauStatus.html">LuauStatus</a></dt>
+    <dd><p><a class="xref" href="LuauInterop.Runtime.LuauStatus.html#LuauInterop_Runtime_LuauStatus_OK">OK</a> on success, or an error status if compilation or loading fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenBase_" data-uid="LuauInterop.Luau.OpenBase*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenBase" data-uid="LuauInterop.Luau.OpenBase">
+  OpenBase()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenBase()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenBit32_" data-uid="LuauInterop.Luau.OpenBit32*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenBit32" data-uid="LuauInterop.Luau.OpenBit32">
+  OpenBit32()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenBit32()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenBuffer_" data-uid="LuauInterop.Luau.OpenBuffer*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenBuffer" data-uid="LuauInterop.Luau.OpenBuffer">
+  OpenBuffer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenCoroutine_" data-uid="LuauInterop.Luau.OpenCoroutine*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenCoroutine" data-uid="LuauInterop.Luau.OpenCoroutine">
+  OpenCoroutine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenCoroutine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenDebug_" data-uid="LuauInterop.Luau.OpenDebug*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenDebug" data-uid="LuauInterop.Luau.OpenDebug">
+  OpenDebug()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenDebug()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenInteger_" data-uid="LuauInterop.Luau.OpenInteger*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenInteger" data-uid="LuauInterop.Luau.OpenInteger">
+  OpenInteger()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenInteger()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenLibraries_" data-uid="LuauInterop.Luau.OpenLibraries*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenLibraries" data-uid="LuauInterop.Luau.OpenLibraries">
+  OpenLibraries()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenLibraries()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenMath_" data-uid="LuauInterop.Luau.OpenMath*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenMath" data-uid="LuauInterop.Luau.OpenMath">
+  OpenMath()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenMath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenOS_" data-uid="LuauInterop.Luau.OpenOS*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenOS" data-uid="LuauInterop.Luau.OpenOS">
+  OpenOS()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenOS()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenString_" data-uid="LuauInterop.Luau.OpenString*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenString" data-uid="LuauInterop.Luau.OpenString">
+  OpenString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenTable_" data-uid="LuauInterop.Luau.OpenTable*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenTable" data-uid="LuauInterop.Luau.OpenTable">
+  OpenTable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenTable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenUtf8_" data-uid="LuauInterop.Luau.OpenUtf8*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenUtf8" data-uid="LuauInterop.Luau.OpenUtf8">
+  OpenUtf8()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenUtf8()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_OpenVector_" data-uid="LuauInterop.Luau.OpenVector*"></a>
+
+  <h3 id="LuauInterop_Luau_OpenVector" data-uid="LuauInterop.Luau.OpenVector">
+  OpenVector()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens all standard Luau libraries into this state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OpenVector()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_Pop_" data-uid="LuauInterop.Luau.Pop*"></a>
+
+  <h3 id="LuauInterop_Luau_Pop_System_Int32_" data-uid="LuauInterop.Luau.Pop(System.Int32)">
+  Pop(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pops <code class="paramref">n</code> values off the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pop(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of values to pop.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_Push_" data-uid="LuauInterop.Luau.Push*"></a>
+
+  <h3 id="LuauInterop_Luau_Push_LuauInterop_LuauValue_" data-uid="LuauInterop.Luau.Push(LuauInterop.LuauValue)">
+  Push(LuauValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pushes a <a class="xref" href="LuauInterop.LuauValue.html">LuauValue</a> onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Push(LuauValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="LuauInterop.LuauValue.html">LuauValue</a></dt>
+    <dd><p>The value to push.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if this instance has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LuauInterop_Luau_SetFFlag_" data-uid="LuauInterop.Luau.SetFFlag*"></a>
+
+  <h3 id="LuauInterop_Luau_SetFFlag_System_String_System_Boolean_" data-uid="LuauInterop.Luau.SetFFlag(System.String,System.Boolean)">
+  SetFFlag(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets an FFlag in the Luau VM. FFlags are used to enable or disable experimental features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFFlag(string name, bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the FFlag to set.</p>
+</dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A value indicating whether the FFlag should be enabled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop/Luau.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

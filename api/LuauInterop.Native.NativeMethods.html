@@ -1,0 +1,6001 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NativeMethods | LuauInterop </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NativeMethods | LuauInterop ">
+      
+      <meta name="description" content="Class containing P/Invoke signatures for the Luau C API.">
+      <link rel="icon" href="../images/icon-32x32.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-32x32.png" alt="LuauInterop">
+            LuauInterop
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LuauInterop.Native.NativeMethods">
+
+
+
+  <h1 id="LuauInterop_Native_NativeMethods" data-uid="LuauInterop.Native.NativeMethods" class="text-break">
+Class NativeMethods  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LuauInterop.html">LuauInterop</a>.<a class="xref" href="LuauInterop.Native.html">Native</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LuauInterop.Native.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Class containing P/Invoke signatures for the Luau C API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NativeMethods</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NativeMethods</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaL_newstate_" data-uid="LuauInterop.Native.NativeMethods.luaL_newstate*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaL_newstate" data-uid="LuauInterop.Native.NativeMethods.luaL_newstate">
+  luaL_newstate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint luaL_newstate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaL_openlibs_" data-uid="LuauInterop.Native.NativeMethods.luaL_openlibs*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaL_openlibs_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaL_openlibs(System.IntPtr)">
+  luaL_openlibs(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void luaL_openlibs(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaL_sandbox_" data-uid="LuauInterop.Native.NativeMethods.luaL_sandbox*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaL_sandbox_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaL_sandbox(System.IntPtr)">
+  luaL_sandbox(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void luaL_sandbox(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaL_sandboxthread_" data-uid="LuauInterop.Native.NativeMethods.luaL_sandboxthread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaL_sandboxthread_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaL_sandboxthread(System.IntPtr)">
+  luaL_sandboxthread(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void luaL_sandboxthread(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_absindex_" data-uid="LuauInterop.Native.NativeMethods.lua_absindex*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_absindex_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_absindex(System.IntPtr,System.Int32)">
+  lua_absindex(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_absindex(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_break_" data-uid="LuauInterop.Native.NativeMethods.lua_break*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_break_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_break(System.IntPtr)">
+  lua_break(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_break(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_breakpoint_" data-uid="LuauInterop.Native.NativeMethods.lua_breakpoint*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_breakpoint_System_IntPtr_System_Int32_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_breakpoint(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+  lua_breakpoint(nint, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_breakpoint(nint L, int funcindex, int line, int enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>funcindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>line</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_call_" data-uid="LuauInterop.Native.NativeMethods.lua_call*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_call_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_call(System.IntPtr,System.Int32,System.Int32)">
+  lua_call(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_call(nint L, int nargs, int nresults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>nargs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nresults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_checkstack_" data-uid="LuauInterop.Native.NativeMethods.lua_checkstack*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_checkstack_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_checkstack(System.IntPtr,System.Int32)">
+  lua_checkstack(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_checkstack(nint L, int sz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_cleartable_" data-uid="LuauInterop.Native.NativeMethods.lua_cleartable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_cleartable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_cleartable(System.IntPtr,System.Int32)">
+  lua_cleartable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_cleartable(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_clock_" data-uid="LuauInterop.Native.NativeMethods.lua_clock*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_clock" data-uid="LuauInterop.Native.NativeMethods.lua_clock">
+  lua_clock()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double lua_clock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_clonefunction_" data-uid="LuauInterop.Native.NativeMethods.lua_clonefunction*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_clonefunction_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_clonefunction(System.IntPtr,System.Int32)">
+  lua_clonefunction(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_clonefunction(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_clonetable_" data-uid="LuauInterop.Native.NativeMethods.lua_clonetable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_clonetable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_clonetable(System.IntPtr,System.Int32)">
+  lua_clonetable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_clonetable(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_close_" data-uid="LuauInterop.Native.NativeMethods.lua_close*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_close_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_close(System.IntPtr)">
+  lua_close(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_close(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_concat_" data-uid="LuauInterop.Native.NativeMethods.lua_concat*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_concat_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_concat(System.IntPtr,System.Int32)">
+  lua_concat(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_concat(nint L, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_costatus_" data-uid="LuauInterop.Native.NativeMethods.lua_costatus*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_costatus_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_costatus(System.IntPtr,System.IntPtr)">
+  lua_costatus(nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_costatus(nint L, nint co)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>co</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_cpcall_" data-uid="LuauInterop.Native.NativeMethods.lua_cpcall*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_cpcall_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_cpcall(System.IntPtr,System.IntPtr,System.IntPtr)">
+  lua_cpcall(nint, nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_cpcall(nint L, nint func, nint ud)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>ud</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_createtable_" data-uid="LuauInterop.Native.NativeMethods.lua_createtable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_createtable_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_createtable(System.IntPtr,System.Int32,System.Int32)">
+  lua_createtable(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_createtable(nint L, int narr, int nrec)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>narr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nrec</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_debugtrace_" data-uid="LuauInterop.Native.NativeMethods.lua_debugtrace*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_debugtrace_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_debugtrace(System.IntPtr)">
+  lua_debugtrace(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_debugtrace(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_encodepointer_" data-uid="LuauInterop.Native.NativeMethods.lua_encodepointer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_encodepointer_System_IntPtr_System_UIntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_encodepointer(System.IntPtr,System.UIntPtr)">
+  lua_encodepointer(nint, nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint lua_encodepointer(nint L, nuint p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_equal_" data-uid="LuauInterop.Native.NativeMethods.lua_equal*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_equal_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_equal(System.IntPtr,System.Int32,System.Int32)">
+  lua_equal(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_equal(nint L, int idx1, int idx2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>idx2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_error_" data-uid="LuauInterop.Native.NativeMethods.lua_error*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_error_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_error(System.IntPtr)">
+  lua_error(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_error(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_free_" data-uid="LuauInterop.Native.NativeMethods.lua_free*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_free_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_free(System.IntPtr)">
+  lua_free(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_free(nint ptr)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ptr</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_gc_" data-uid="LuauInterop.Native.NativeMethods.lua_gc*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_gc_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_gc(System.IntPtr,System.Int32,System.Int32)">
+  lua_gc(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_gc(nint L, int what, int data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getallocf_" data-uid="LuauInterop.Native.NativeMethods.lua_getallocf*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getallocf_System_IntPtr_System_IntPtr__" data-uid="LuauInterop.Native.NativeMethods.lua_getallocf(System.IntPtr,System.IntPtr@)">
+  lua_getallocf(nint, out nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_getallocf(nint L, out nint ud)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>ud</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getargument_" data-uid="LuauInterop.Native.NativeMethods.lua_getargument*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getargument_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getargument(System.IntPtr,System.Int32,System.Int32)">
+  lua_getargument(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_getargument(nint L, int level, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getcounters_" data-uid="LuauInterop.Native.NativeMethods.lua_getcounters*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getcounters_System_IntPtr_System_Int32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_getcounters(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.IntPtr)">
+  lua_getcounters(nint, int, nint, nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_getcounters(nint L, int funcindex, nint context, nint functionvisit, nint countervisit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>funcindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>functionvisit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>countervisit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getcoverage_" data-uid="LuauInterop.Native.NativeMethods.lua_getcoverage*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getcoverage_System_IntPtr_System_Int32_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_getcoverage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+  lua_getcoverage(nint, int, nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_getcoverage(nint L, int funcindex, nint context, nint callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>funcindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getfenv_" data-uid="LuauInterop.Native.NativeMethods.lua_getfenv*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getfenv_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getfenv(System.IntPtr,System.Int32)">
+  lua_getfenv(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_getfenv(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getfield_" data-uid="LuauInterop.Native.NativeMethods.lua_getfield*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getfield_System_IntPtr_System_Int32_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_getfield(System.IntPtr,System.Int32,System.String)">
+  lua_getfield(nint, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int lua_getfield(nint L, int idx, string k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getinfo_" data-uid="LuauInterop.Native.NativeMethods.lua_getinfo*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getinfo_System_IntPtr_System_Int32_System_String_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_getinfo(System.IntPtr,System.Int32,System.String,System.IntPtr)">
+  lua_getinfo(nint, int, string, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int lua_getinfo(nint L, int level, string what, nint ar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>what</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getlightuserdataname_" data-uid="LuauInterop.Native.NativeMethods.lua_getlightuserdataname*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getlightuserdataname_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getlightuserdataname(System.IntPtr,System.Int32)">
+  lua_getlightuserdataname(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_getlightuserdataname(nint L, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getlocal_" data-uid="LuauInterop.Native.NativeMethods.lua_getlocal*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getlocal_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getlocal(System.IntPtr,System.Int32,System.Int32)">
+  lua_getlocal(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_getlocal(nint L, int level, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getmetatable_" data-uid="LuauInterop.Native.NativeMethods.lua_getmetatable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getmetatable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getmetatable(System.IntPtr,System.Int32)">
+  lua_getmetatable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_getmetatable(nint L, int objindex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>objindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getreadonly_" data-uid="LuauInterop.Native.NativeMethods.lua_getreadonly*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getreadonly_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getreadonly(System.IntPtr,System.Int32)">
+  lua_getreadonly(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_getreadonly(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_gettable_" data-uid="LuauInterop.Native.NativeMethods.lua_gettable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_gettable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_gettable(System.IntPtr,System.Int32)">
+  lua_gettable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_gettable(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getthreaddata_" data-uid="LuauInterop.Native.NativeMethods.lua_getthreaddata*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getthreaddata_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_getthreaddata(System.IntPtr)">
+  lua_getthreaddata(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_getthreaddata(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_gettop_" data-uid="LuauInterop.Native.NativeMethods.lua_gettop*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_gettop_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_gettop(System.IntPtr)">
+  lua_gettop(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_gettop(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getupvalue_" data-uid="LuauInterop.Native.NativeMethods.lua_getupvalue*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getupvalue_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getupvalue(System.IntPtr,System.Int32,System.Int32)">
+  lua_getupvalue(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_getupvalue(nint L, int funcindex, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>funcindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getuserdatadtor_" data-uid="LuauInterop.Native.NativeMethods.lua_getuserdatadtor*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getuserdatadtor_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getuserdatadtor(System.IntPtr,System.Int32)">
+  lua_getuserdatadtor(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_getuserdatadtor(nint L, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_getuserdatametatable_" data-uid="LuauInterop.Native.NativeMethods.lua_getuserdatametatable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_getuserdatametatable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_getuserdatametatable(System.IntPtr,System.Int32)">
+  lua_getuserdatametatable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_getuserdatametatable(nint L, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_insert_" data-uid="LuauInterop.Native.NativeMethods.lua_insert*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_insert_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_insert(System.IntPtr,System.Int32)">
+  lua_insert(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_insert(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isLfunction_" data-uid="LuauInterop.Native.NativeMethods.lua_isLfunction*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isLfunction_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_isLfunction(System.IntPtr,System.Int32)">
+  lua_isLfunction(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isLfunction(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_iscfunction_" data-uid="LuauInterop.Native.NativeMethods.lua_iscfunction*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_iscfunction_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_iscfunction(System.IntPtr,System.Int32)">
+  lua_iscfunction(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_iscfunction(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isnumber_" data-uid="LuauInterop.Native.NativeMethods.lua_isnumber*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isnumber_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_isnumber(System.IntPtr,System.Int32)">
+  lua_isnumber(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isnumber(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isstring_" data-uid="LuauInterop.Native.NativeMethods.lua_isstring*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isstring_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_isstring(System.IntPtr,System.Int32)">
+  lua_isstring(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isstring(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isthreadreset_" data-uid="LuauInterop.Native.NativeMethods.lua_isthreadreset*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isthreadreset_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_isthreadreset(System.IntPtr)">
+  lua_isthreadreset(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isthreadreset(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isuserdata_" data-uid="LuauInterop.Native.NativeMethods.lua_isuserdata*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isuserdata_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_isuserdata(System.IntPtr,System.Int32)">
+  lua_isuserdata(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isuserdata(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_isyieldable_" data-uid="LuauInterop.Native.NativeMethods.lua_isyieldable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_isyieldable_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_isyieldable(System.IntPtr)">
+  lua_isyieldable(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_isyieldable(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_lessthan_" data-uid="LuauInterop.Native.NativeMethods.lua_lessthan*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_lessthan_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_lessthan(System.IntPtr,System.Int32,System.Int32)">
+  lua_lessthan(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_lessthan(nint L, int idx1, int idx2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>idx2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_lightuserdatatag_" data-uid="LuauInterop.Native.NativeMethods.lua_lightuserdatatag*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_lightuserdatatag_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_lightuserdatatag(System.IntPtr,System.Int32)">
+  lua_lightuserdatatag(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_lightuserdatatag(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_mainthread_" data-uid="LuauInterop.Native.NativeMethods.lua_mainthread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_mainthread_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_mainthread(System.IntPtr)">
+  lua_mainthread(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_mainthread(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_namecallatom_" data-uid="LuauInterop.Native.NativeMethods.lua_namecallatom*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_namecallatom_System_IntPtr_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_namecallatom(System.IntPtr,System.Int32@)">
+  lua_namecallatom(nint, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_namecallatom(nint L, out int atom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>atom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newbuffer_" data-uid="LuauInterop.Native.NativeMethods.lua_newbuffer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newbuffer_System_IntPtr_System_UIntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_newbuffer(System.IntPtr,System.UIntPtr)">
+  lua_newbuffer(nint, nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newbuffer(nint L, nuint sz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newstate_" data-uid="LuauInterop.Native.NativeMethods.lua_newstate*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newstate_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_newstate(System.IntPtr,System.IntPtr)">
+  lua_newstate(nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newstate(nint f, nint ud)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>ud</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newthread_" data-uid="LuauInterop.Native.NativeMethods.lua_newthread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newthread_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_newthread(System.IntPtr)">
+  lua_newthread(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newthread(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newuserdatadtor_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatadtor*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newuserdatadtor_System_IntPtr_System_UIntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatadtor(System.IntPtr,System.UIntPtr,System.IntPtr)">
+  lua_newuserdatadtor(nint, nuint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newuserdatadtor(nint L, nuint sz, nint dtor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>dtor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newuserdatatagged_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatatagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newuserdatatagged_System_IntPtr_System_UIntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatatagged(System.IntPtr,System.UIntPtr,System.Int32)">
+  lua_newuserdatatagged(nint, nuint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newuserdatatagged(nint L, nuint sz, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_newuserdatataggedwithmetatable_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatataggedwithmetatable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_newuserdatataggedwithmetatable_System_IntPtr_System_UIntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_newuserdatataggedwithmetatable(System.IntPtr,System.UIntPtr,System.Int32)">
+  lua_newuserdatataggedwithmetatable(nint, nuint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_newuserdatataggedwithmetatable(nint L, nuint sz, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_next_" data-uid="LuauInterop.Native.NativeMethods.lua_next*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_next_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_next(System.IntPtr,System.Int32)">
+  lua_next(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_next(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_objlen_" data-uid="LuauInterop.Native.NativeMethods.lua_objlen*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_objlen_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_objlen(System.IntPtr,System.Int32)">
+  lua_objlen(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_objlen(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pcall_" data-uid="LuauInterop.Native.NativeMethods.lua_pcall*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pcall_System_IntPtr_System_Int32_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_pcall(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+  lua_pcall(nint, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_pcall(nint L, int nargs, int nresults, int errfunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>nargs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nresults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>errfunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushboolean_" data-uid="LuauInterop.Native.NativeMethods.lua_pushboolean*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushboolean_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_pushboolean(System.IntPtr,System.Int32)">
+  lua_pushboolean(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushboolean(nint L, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushcclosurek_" data-uid="LuauInterop.Native.NativeMethods.lua_pushcclosurek*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushcclosurek_System_IntPtr_System_IntPtr_System_String_System_Int32_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_pushcclosurek(System.IntPtr,System.IntPtr,System.String,System.Int32,System.IntPtr)">
+  lua_pushcclosurek(nint, nint, string, int, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pushcclosurek(nint L, nint fn, string debugname, int nup, nint cont)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>fn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>debugname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>nup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cont</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushfstringL_" data-uid="LuauInterop.Native.NativeMethods.lua_pushfstringL*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushfstringL_System_IntPtr_System_String__" data-uid="LuauInterop.Native.NativeMethods.lua_pushfstringL(System.IntPtr,System.String,)">
+  lua_pushfstringL(nint, string, __arglist)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_pushfstringL(nint L, string fmt, __arglist)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>fmt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushinteger_" data-uid="LuauInterop.Native.NativeMethods.lua_pushinteger*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushinteger_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_pushinteger(System.IntPtr,System.Int32)">
+  lua_pushinteger(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushinteger(nint L, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushinteger64_" data-uid="LuauInterop.Native.NativeMethods.lua_pushinteger64*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushinteger64_System_IntPtr_System_Int64_" data-uid="LuauInterop.Native.NativeMethods.lua_pushinteger64(System.IntPtr,System.Int64)">
+  lua_pushinteger64(nint, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushinteger64(nint L, long n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushlightuserdatatagged_" data-uid="LuauInterop.Native.NativeMethods.lua_pushlightuserdatatagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushlightuserdatatagged_System_IntPtr_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_pushlightuserdatatagged(System.IntPtr,System.IntPtr,System.Int32)">
+  lua_pushlightuserdatatagged(nint, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushlightuserdatatagged(nint L, nint p, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushlstring_" data-uid="LuauInterop.Native.NativeMethods.lua_pushlstring*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushlstring_System_IntPtr_System_String_System_UIntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_pushlstring(System.IntPtr,System.String,System.UIntPtr)">
+  lua_pushlstring(nint, string, nuint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pushlstring(nint L, string s, nuint l)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushnil_" data-uid="LuauInterop.Native.NativeMethods.lua_pushnil*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushnil_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_pushnil(System.IntPtr)">
+  lua_pushnil(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushnil(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushnumber_" data-uid="LuauInterop.Native.NativeMethods.lua_pushnumber*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushnumber_System_IntPtr_System_Double_" data-uid="LuauInterop.Native.NativeMethods.lua_pushnumber(System.IntPtr,System.Double)">
+  lua_pushnumber(nint, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushnumber(nint L, double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushstring_" data-uid="LuauInterop.Native.NativeMethods.lua_pushstring*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushstring_System_IntPtr_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_pushstring(System.IntPtr,System.String)">
+  lua_pushstring(nint, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pushstring(nint L, string s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushthread_" data-uid="LuauInterop.Native.NativeMethods.lua_pushthread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushthread_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_pushthread(System.IntPtr)">
+  lua_pushthread(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_pushthread(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushunsigned_" data-uid="LuauInterop.Native.NativeMethods.lua_pushunsigned*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushunsigned_System_IntPtr_System_UInt32_" data-uid="LuauInterop.Native.NativeMethods.lua_pushunsigned(System.IntPtr,System.UInt32)">
+  lua_pushunsigned(nint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushunsigned(nint L, uint n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushvalue_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvalue*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushvalue_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvalue(System.IntPtr,System.Int32)">
+  lua_pushvalue(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushvalue(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushvector_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvector*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushvector_System_IntPtr_System_Single_System_Single_System_Single_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvector(System.IntPtr,System.Single,System.Single,System.Single)">
+  lua_pushvector(nint, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushvector(nint L, float x, float y, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_pushvfstring_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvfstring*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_pushvfstring_System_IntPtr_System_String_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_pushvfstring(System.IntPtr,System.String,System.IntPtr)">
+  lua_pushvfstring(nint, string, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_pushvfstring(nint L, string fmt, nint argp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>fmt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>argp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawcheckstack_" data-uid="LuauInterop.Native.NativeMethods.lua_rawcheckstack*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawcheckstack_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawcheckstack(System.IntPtr,System.Int32)">
+  lua_rawcheckstack(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_rawcheckstack(nint L, int sz)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>sz</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawequal_" data-uid="LuauInterop.Native.NativeMethods.lua_rawequal*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawequal_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawequal(System.IntPtr,System.Int32,System.Int32)">
+  lua_rawequal(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_rawequal(nint L, int idx1, int idx2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>idx2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawget_" data-uid="LuauInterop.Native.NativeMethods.lua_rawget*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawget_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawget(System.IntPtr,System.Int32)">
+  lua_rawget(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_rawget(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawgetfield_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgetfield*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawgetfield_System_IntPtr_System_Int32_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgetfield(System.IntPtr,System.Int32,System.String)">
+  lua_rawgetfield(nint, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int lua_rawgetfield(nint L, int idx, string k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawgeti_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgeti*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawgeti_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgeti(System.IntPtr,System.Int32,System.Int32)">
+  lua_rawgeti(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_rawgeti(nint L, int idx, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawgetptagged_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgetptagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawgetptagged_System_IntPtr_System_Int32_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawgetptagged(System.IntPtr,System.Int32,System.IntPtr,System.Int32)">
+  lua_rawgetptagged(nint, int, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_rawgetptagged(nint L, int idx, nint p, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawiter_" data-uid="LuauInterop.Native.NativeMethods.lua_rawiter*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawiter_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawiter(System.IntPtr,System.Int32,System.Int32)">
+  lua_rawiter(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_rawiter(nint L, int idx, int iter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>iter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawset_" data-uid="LuauInterop.Native.NativeMethods.lua_rawset*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawset_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawset(System.IntPtr,System.Int32)">
+  lua_rawset(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_rawset(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawsetfield_" data-uid="LuauInterop.Native.NativeMethods.lua_rawsetfield*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawsetfield_System_IntPtr_System_Int32_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_rawsetfield(System.IntPtr,System.Int32,System.String)">
+  lua_rawsetfield(nint, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_rawsetfield(nint L, int idx, string k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawseti_" data-uid="LuauInterop.Native.NativeMethods.lua_rawseti*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawseti_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawseti(System.IntPtr,System.Int32,System.Int32)">
+  lua_rawseti(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_rawseti(nint L, int idx, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_rawsetptagged_" data-uid="LuauInterop.Native.NativeMethods.lua_rawsetptagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_rawsetptagged_System_IntPtr_System_Int32_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_rawsetptagged(System.IntPtr,System.Int32,System.IntPtr,System.Int32)">
+  lua_rawsetptagged(nint, int, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_rawsetptagged(nint L, int idx, nint p, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_ref_" data-uid="LuauInterop.Native.NativeMethods.lua_ref*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_ref_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_ref(System.IntPtr,System.Int32)">
+  lua_ref(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_ref(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_registeruserdatadirectaccess_" data-uid="LuauInterop.Native.NativeMethods.lua_registeruserdatadirectaccess*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_registeruserdatadirectaccess_System_IntPtr_System_Int32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_registeruserdatadirectaccess(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.IntPtr)">
+  lua_registeruserdatadirectaccess(nint, int, nint, nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_registeruserdatadirectaccess(nint L, int tag, nint get, nint set, nint namecall)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>get</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>set</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>namecall</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_registeruserdatadirectfieldget_" data-uid="LuauInterop.Native.NativeMethods.lua_registeruserdatadirectfieldget*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_registeruserdatadirectfieldget_System_IntPtr_System_Int32_System_String_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_registeruserdatadirectfieldget(System.IntPtr,System.Int32,System.String,System.IntPtr)">
+  lua_registeruserdatadirectfieldget(nint, int, string, nint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_registeruserdatadirectfieldget(nint L, int tag, string field, nint fn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_remove_" data-uid="LuauInterop.Native.NativeMethods.lua_remove*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_remove_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_remove(System.IntPtr,System.Int32)">
+  lua_remove(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_remove(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_replace_" data-uid="LuauInterop.Native.NativeMethods.lua_replace*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_replace_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_replace(System.IntPtr,System.Int32)">
+  lua_replace(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_replace(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_resetthread_" data-uid="LuauInterop.Native.NativeMethods.lua_resetthread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_resetthread_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_resetthread(System.IntPtr)">
+  lua_resetthread(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_resetthread(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_resume_" data-uid="LuauInterop.Native.NativeMethods.lua_resume*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_resume_System_IntPtr_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_resume(System.IntPtr,System.IntPtr,System.Int32)">
+  lua_resume(nint, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_resume(nint L, nint from, int narg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>narg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_resumeerror_" data-uid="LuauInterop.Native.NativeMethods.lua_resumeerror*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_resumeerror_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_resumeerror(System.IntPtr,System.IntPtr)">
+  lua_resumeerror(nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_resumeerror(nint L, nint from)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setfenv_" data-uid="LuauInterop.Native.NativeMethods.lua_setfenv*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setfenv_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setfenv(System.IntPtr,System.Int32)">
+  lua_setfenv(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_setfenv(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setfield_" data-uid="LuauInterop.Native.NativeMethods.lua_setfield*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setfield_System_IntPtr_System_Int32_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_setfield(System.IntPtr,System.Int32,System.String)">
+  lua_setfield(nint, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_setfield(nint L, int idx, string k)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>k</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setlightuserdataname_" data-uid="LuauInterop.Native.NativeMethods.lua_setlightuserdataname*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setlightuserdataname_System_IntPtr_System_Int32_System_String_" data-uid="LuauInterop.Native.NativeMethods.lua_setlightuserdataname(System.IntPtr,System.Int32,System.String)">
+  lua_setlightuserdataname(nint, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_setlightuserdataname(nint L, int tag, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setlocal_" data-uid="LuauInterop.Native.NativeMethods.lua_setlocal*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setlocal_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setlocal(System.IntPtr,System.Int32,System.Int32)">
+  lua_setlocal(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_setlocal(nint L, int level, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setmemcat_" data-uid="LuauInterop.Native.NativeMethods.lua_setmemcat*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setmemcat_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setmemcat(System.IntPtr,System.Int32)">
+  lua_setmemcat(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setmemcat(nint L, int category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setmetatable_" data-uid="LuauInterop.Native.NativeMethods.lua_setmetatable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setmetatable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setmetatable(System.IntPtr,System.Int32)">
+  lua_setmetatable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_setmetatable(nint L, int objindex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>objindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setreadonly_" data-uid="LuauInterop.Native.NativeMethods.lua_setreadonly*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setreadonly_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setreadonly(System.IntPtr,System.Int32,System.Int32)">
+  lua_setreadonly(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setreadonly(nint L, int idx, int enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setsafeenv_" data-uid="LuauInterop.Native.NativeMethods.lua_setsafeenv*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setsafeenv_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setsafeenv(System.IntPtr,System.Int32,System.Int32)">
+  lua_setsafeenv(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setsafeenv(nint L, int idx, int enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_settable_" data-uid="LuauInterop.Native.NativeMethods.lua_settable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_settable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_settable(System.IntPtr,System.Int32)">
+  lua_settable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_settable(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setthreaddata_" data-uid="LuauInterop.Native.NativeMethods.lua_setthreaddata*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setthreaddata_System_IntPtr_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_setthreaddata(System.IntPtr,System.IntPtr)">
+  lua_setthreaddata(nint, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setthreaddata(nint L, nint data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_settop_" data-uid="LuauInterop.Native.NativeMethods.lua_settop*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_settop_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_settop(System.IntPtr,System.Int32)">
+  lua_settop(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_settop(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setupvalue_" data-uid="LuauInterop.Native.NativeMethods.lua_setupvalue*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setupvalue_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setupvalue(System.IntPtr,System.Int32,System.Int32)">
+  lua_setupvalue(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_setupvalue(nint L, int funcindex, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>funcindex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setuserdatadtor_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatadtor*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setuserdatadtor_System_IntPtr_System_Int32_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatadtor(System.IntPtr,System.Int32,System.IntPtr)">
+  lua_setuserdatadtor(nint, int, nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setuserdatadtor(nint L, int tag, nint dtor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dtor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setuserdatametatable_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatametatable*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setuserdatametatable_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatametatable(System.IntPtr,System.Int32)">
+  lua_setuserdatametatable(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setuserdatametatable(nint L, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_setuserdatatag_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatatag*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_setuserdatatag_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_setuserdatatag(System.IntPtr,System.Int32,System.Int32)">
+  lua_setuserdatatag(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_setuserdatatag(nint L, int idx, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_singlestep_" data-uid="LuauInterop.Native.NativeMethods.lua_singlestep*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_singlestep_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_singlestep(System.IntPtr,System.Int32)">
+  lua_singlestep(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_singlestep(nint L, int enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_stackdepth_" data-uid="LuauInterop.Native.NativeMethods.lua_stackdepth*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_stackdepth_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_stackdepth(System.IntPtr)">
+  lua_stackdepth(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_stackdepth(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_status_" data-uid="LuauInterop.Native.NativeMethods.lua_status*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_status_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_status(System.IntPtr)">
+  lua_status(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_status(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_toboolean_" data-uid="LuauInterop.Native.NativeMethods.lua_toboolean*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_toboolean_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_toboolean(System.IntPtr,System.Int32)">
+  lua_toboolean(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_toboolean(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tobuffer_" data-uid="LuauInterop.Native.NativeMethods.lua_tobuffer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tobuffer_System_IntPtr_System_Int32_System_UIntPtr__" data-uid="LuauInterop.Native.NativeMethods.lua_tobuffer(System.IntPtr,System.Int32,System.UIntPtr@)">
+  lua_tobuffer(nint, int, out nuint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_tobuffer(nint L, int idx, out nuint len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tocfunction_" data-uid="LuauInterop.Native.NativeMethods.lua_tocfunction*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tocfunction_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_tocfunction(System.IntPtr,System.Int32)">
+  lua_tocfunction(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_tocfunction(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tointeger64_" data-uid="LuauInterop.Native.NativeMethods.lua_tointeger64*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tointeger64_System_IntPtr_System_Int32_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tointeger64(System.IntPtr,System.Int32,System.Int32@)">
+  lua_tointeger64(nint, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long lua_tointeger64(nint L, int idx, out int isinteger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isinteger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tointegerx_" data-uid="LuauInterop.Native.NativeMethods.lua_tointegerx*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tointegerx_System_IntPtr_System_Int32_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tointegerx(System.IntPtr,System.Int32,System.Int32@)">
+  lua_tointegerx(nint, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int lua_tointegerx(nint L, int idx, out int isnum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isnum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tolightuserdata_" data-uid="LuauInterop.Native.NativeMethods.lua_tolightuserdata*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tolightuserdata_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_tolightuserdata(System.IntPtr,System.Int32)">
+  lua_tolightuserdata(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_tolightuserdata(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tolightuserdatatagged_" data-uid="LuauInterop.Native.NativeMethods.lua_tolightuserdatatagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tolightuserdatatagged_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_tolightuserdatatagged(System.IntPtr,System.Int32,System.Int32)">
+  lua_tolightuserdatatagged(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_tolightuserdatatagged(nint L, int idx, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tolstring_" data-uid="LuauInterop.Native.NativeMethods.lua_tolstring*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tolstring_System_IntPtr_System_Int32_System_UIntPtr__" data-uid="LuauInterop.Native.NativeMethods.lua_tolstring(System.IntPtr,System.Int32,System.UIntPtr@)">
+  lua_tolstring(nint, int, out nuint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_tolstring(nint L, int idx, out nuint len)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tolstringatom_" data-uid="LuauInterop.Native.NativeMethods.lua_tolstringatom*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tolstringatom_System_IntPtr_System_Int32_System_UIntPtr__System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tolstringatom(System.IntPtr,System.Int32,System.UIntPtr@,System.Int32@)">
+  lua_tolstringatom(nint, int, out nuint, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_tolstringatom(nint L, int idx, out nuint len, out int atom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>len</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>atom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tonumberx_" data-uid="LuauInterop.Native.NativeMethods.lua_tonumberx*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tonumberx_System_IntPtr_System_Int32_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tonumberx(System.IntPtr,System.Int32,System.Int32@)">
+  lua_tonumberx(nint, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double lua_tonumberx(nint L, int idx, out int isnum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isnum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_topointer_" data-uid="LuauInterop.Native.NativeMethods.lua_topointer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_topointer_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_topointer(System.IntPtr,System.Int32)">
+  lua_topointer(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_topointer(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tostringatom_" data-uid="LuauInterop.Native.NativeMethods.lua_tostringatom*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tostringatom_System_IntPtr_System_Int32_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tostringatom(System.IntPtr,System.Int32,System.Int32@)">
+  lua_tostringatom(nint, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint lua_tostringatom(nint L, int idx, out int atom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>atom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_totalbytes_" data-uid="LuauInterop.Native.NativeMethods.lua_totalbytes*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_totalbytes_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_totalbytes(System.IntPtr,System.Int32)">
+  lua_totalbytes(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint lua_totalbytes(nint L, int category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>category</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tothread_" data-uid="LuauInterop.Native.NativeMethods.lua_tothread*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tothread_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_tothread(System.IntPtr,System.Int32)">
+  lua_tothread(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_tothread(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tounsignedx_" data-uid="LuauInterop.Native.NativeMethods.lua_tounsignedx*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tounsignedx_System_IntPtr_System_Int32_System_Int32__" data-uid="LuauInterop.Native.NativeMethods.lua_tounsignedx(System.IntPtr,System.Int32,System.Int32@)">
+  lua_tounsignedx(nint, int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint lua_tounsignedx(nint L, int idx, out int isnum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isnum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_touserdata_" data-uid="LuauInterop.Native.NativeMethods.lua_touserdata*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_touserdata_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_touserdata(System.IntPtr,System.Int32)">
+  lua_touserdata(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_touserdata(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_touserdatatagged_" data-uid="LuauInterop.Native.NativeMethods.lua_touserdatatagged*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_touserdatatagged_System_IntPtr_System_Int32_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_touserdatatagged(System.IntPtr,System.Int32,System.Int32)">
+  lua_touserdatatagged(nint, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_touserdatatagged(nint L, int idx, int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_tovector_" data-uid="LuauInterop.Native.NativeMethods.lua_tovector*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_tovector_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_tovector(System.IntPtr,System.Int32)">
+  lua_tovector(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_tovector(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_type_" data-uid="LuauInterop.Native.NativeMethods.lua_type*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_type_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_type(System.IntPtr,System.Int32)">
+  lua_type(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_type(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_typename_" data-uid="LuauInterop.Native.NativeMethods.lua_typename*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_typename_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_typename(System.IntPtr,System.Int32)">
+  lua_typename(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint lua_typename(nint L, int tp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>tp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_unref_" data-uid="LuauInterop.Native.NativeMethods.lua_unref*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_unref_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_unref(System.IntPtr,System.Int32)">
+  lua_unref(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_unref(nint L, int refid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>refid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setboolean_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setboolean*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setboolean_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setboolean(System.IntPtr,System.Int32)">
+  lua_userdatadirectfield_setboolean(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_userdatadirectfield_setboolean(nint result, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setinteger64_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setinteger64*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setinteger64_System_IntPtr_System_Int64_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setinteger64(System.IntPtr,System.Int64)">
+  lua_userdatadirectfield_setinteger64(nint, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_userdatadirectfield_setinteger64(nint result, long n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setnil_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setnil*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setnil_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setnil(System.IntPtr)">
+  lua_userdatadirectfield_setnil(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_userdatadirectfield_setnil(nint result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setnumber_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setnumber*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setnumber_System_IntPtr_System_Double_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setnumber(System.IntPtr,System.Double)">
+  lua_userdatadirectfield_setnumber(nint, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_userdatadirectfield_setnumber(nint result, double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setvector_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setvector*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatadirectfield_setvector_System_IntPtr_System_Single_System_Single_System_Single_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatadirectfield_setvector(System.IntPtr,System.Single,System.Single,System.Single)">
+  lua_userdatadirectfield_setvector(nint, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_userdatadirectfield_setvector(nint result, float x, float y, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_userdatatag_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatatag*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_userdatatag_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_userdatatag(System.IntPtr,System.Int32)">
+  lua_userdatatag(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_userdatatag(nint L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_xmove_" data-uid="LuauInterop.Native.NativeMethods.lua_xmove*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_xmove_System_IntPtr_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_xmove(System.IntPtr,System.IntPtr,System.Int32)">
+  lua_xmove(nint, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_xmove(nint from, nint to, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_xpush_" data-uid="LuauInterop.Native.NativeMethods.lua_xpush*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_xpush_System_IntPtr_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_xpush(System.IntPtr,System.IntPtr,System.Int32)">
+  lua_xpush(nint, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_xpush(nint from, nint to, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_lua_yield_" data-uid="LuauInterop.Native.NativeMethods.lua_yield*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_lua_yield_System_IntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.lua_yield(System.IntPtr,System.Int32)">
+  lua_yield(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_yield(nint L, int nresults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>nresults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_base_" data-uid="LuauInterop.Native.NativeMethods.luaopen_base*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_base_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_base(System.IntPtr)">
+  luaopen_base(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_base(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_bit32_" data-uid="LuauInterop.Native.NativeMethods.luaopen_bit32*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_bit32_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_bit32(System.IntPtr)">
+  luaopen_bit32(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_bit32(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_buffer_" data-uid="LuauInterop.Native.NativeMethods.luaopen_buffer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_buffer_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_buffer(System.IntPtr)">
+  luaopen_buffer(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_buffer(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_coroutine_" data-uid="LuauInterop.Native.NativeMethods.luaopen_coroutine*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_coroutine_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_coroutine(System.IntPtr)">
+  luaopen_coroutine(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_coroutine(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_debug_" data-uid="LuauInterop.Native.NativeMethods.luaopen_debug*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_debug_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_debug(System.IntPtr)">
+  luaopen_debug(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_debug(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_integer_" data-uid="LuauInterop.Native.NativeMethods.luaopen_integer*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_integer_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_integer(System.IntPtr)">
+  luaopen_integer(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_integer(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_math_" data-uid="LuauInterop.Native.NativeMethods.luaopen_math*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_math_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_math(System.IntPtr)">
+  luaopen_math(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_math(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_os_" data-uid="LuauInterop.Native.NativeMethods.luaopen_os*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_os_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_os(System.IntPtr)">
+  luaopen_os(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_os(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_string_" data-uid="LuauInterop.Native.NativeMethods.luaopen_string*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_string_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_string(System.IntPtr)">
+  luaopen_string(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_string(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_table_" data-uid="LuauInterop.Native.NativeMethods.luaopen_table*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_table_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_table(System.IntPtr)">
+  luaopen_table(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_table(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_utf8_" data-uid="LuauInterop.Native.NativeMethods.luaopen_utf8*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_utf8_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_utf8(System.IntPtr)">
+  luaopen_utf8(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_utf8(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luaopen_vector_" data-uid="LuauInterop.Native.NativeMethods.luaopen_vector*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luaopen_vector_System_IntPtr_" data-uid="LuauInterop.Native.NativeMethods.luaopen_vector(System.IntPtr)">
+  luaopen_vector(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_vector(nint L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luau_compile_" data-uid="LuauInterop.Native.NativeMethods.luau_compile*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luau_compile_System_IntPtr_System_UIntPtr_System_IntPtr_System_UIntPtr__" data-uid="LuauInterop.Native.NativeMethods.luau_compile(System.IntPtr,System.UIntPtr,System.IntPtr,System.UIntPtr@)">
+  luau_compile(nint, nuint, nint, out nuint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint luau_compile(nint source, nuint size, nint options, out nuint outsize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>outsize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luau_load_" data-uid="LuauInterop.Native.NativeMethods.luau_load*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luau_load_System_IntPtr_System_String_System_IntPtr_System_UIntPtr_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.luau_load(System.IntPtr,System.String,System.IntPtr,System.UIntPtr,System.Int32)">
+  luau_load(nint, string, nint, nuint, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int luau_load(nint L, string chunkname, nint data, nuint size, int env)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>chunkname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>env</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LuauInterop_Native_NativeMethods_luau_setfflag_" data-uid="LuauInterop.Native.NativeMethods.luau_setfflag*"></a>
+
+  <h3 id="LuauInterop_Native_NativeMethods_luau_setfflag_System_String_System_Int32_" data-uid="LuauInterop.Native.NativeMethods.luau_setfflag(System.String,System.Int32)">
+  luau_setfflag(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spxnso/LuauInterop/blob/master/src/LuauInterop.Native/NativeMethods.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void luau_setfflag(string name, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

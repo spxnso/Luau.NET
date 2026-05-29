@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Quick Start | LuauInterop </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Quick Start | LuauInterop ">
+      
+      
+      <link rel="icon" href="../images/icon-32x32.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spxnso/LuauInterop/blob/master/docs/docs/quickstart.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon-32x32.png" alt="LuauInterop">
+            LuauInterop
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="quick-start">Quick Start</h1>
+
+<h2 id="creating-a-vm">Creating a VM</h2>
+<pre><code class="lang-csharp">using var luau = new Luau();
+luau.OpenLibraries();
+</code></pre>
+<p>Always wrap the <code>Luau</code> instance in a <code>using</code> block, it owns the native state and must be disposed.</p>
+<h2 id="running-a-script">Running a Script</h2>
+<pre><code class="lang-csharp">var results = luau.DoString(&quot;return 1 + 1&quot;);
+Console.WriteLine(results[0]); // 2
+</code></pre>
+<p><code>DoString</code> returns every value the script returns as <code>object?[]</code>.</p>
+<h2 id="compiling-bytecode">Compiling Bytecode</h2>
+<p>Pre-compiling is useful when you want to run the same script multiple times without recompiling:</p>
+<pre><code class="lang-csharp">using var chunk = luau.Compile(&quot;return function(x) return x * x end&quot;);
+var results = luau.DoChunk(chunk);
+</code></pre>
+<h2 id="calling-a-luau-function">Calling a Luau Function</h2>
+<pre><code class="lang-csharp">luau.DoString(@&quot;
+    function greet(name)
+        return 'Hello, ' .. name .. '!'
+    end
+&quot;);
+
+var greet = luau[&quot;greet&quot;] as LuauFunction ?? throw new InvalidOperationException(&quot;greet is not a function&quot;);;
+using (greet)
+{
+    var result = greet.Call(&quot;World&quot;);
+    Console.WriteLine(result[0]); // Hello, World!
+}
+</code></pre>
+<h2 id="working-with-tables">Working with Tables</h2>
+<pre><code class="lang-csharp">luau.DoString(&quot;player = { name = 'Alice', score = 100 }&quot;);
+
+var player = luau[&quot;player&quot;] as LuauTable ?? throw new InvalidOperationException(&quot;player is not a table.&quot;);
+using (player)
+{
+    Console.WriteLine(player[&quot;name&quot;]);  // Alice
+    Console.WriteLine(player[&quot;score&quot;]); // 100
+
+    player[&quot;score&quot;] = 200L;
+}
+</code></pre>
+<h2 id="global-variables">Global Variables</h2>
+<pre><code class="lang-csharp">// Set a global
+luau[&quot;version&quot;] = &quot;1.0.0&quot;;
+
+// Get a global
+var version = luau[&quot;version&quot;];
+Console.WriteLine(version); // 1.0.0
+</code></pre>
+<h2 id="coroutines">Coroutines</h2>
+<pre><code class="lang-csharp">luau.DoString(@&quot;
+    co = coroutine.create(function(x)
+        coroutine.yield(x + 1)
+        return x + 2
+    end)
+&quot;);
+
+var co = luau[&quot;co&quot;] as LuauThread;
+using (co)
+{
+    var r1 = co.Resume((double)10); // Don't forget to cast to double!
+    Console.WriteLine(r1[0]); // 11
+
+    var r2 = co.Resume();
+    Console.WriteLine(r2[0]); // 12
+}
+</code></pre>
+<h2 id="using-fflags">Using FFlags</h2>
+<p>Here's an example using fflags to use the newest Integer type and library.</p>
+<pre><code class="lang-csharp">using var luau = new Luau();
+        
+luau.SetFFlag(&quot;LuauIntegerType&quot;, true);
+luau.SetFFlag(&quot;LuauIntegerLibrary&quot;, true);
+
+luau.OpenLibraries();
+
+var results = luau.DoString(@&quot;
+    return integer.fromstring('1011100', 2) -- 92
+&quot;);
+
+Console.WriteLine(results[0]);
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<p>Runtime and compilation errors are surfaced as <code>LuauException</code>:</p>
+<pre><code class="lang-csharp">try
+{
+    luau.DoString(&quot;error('something went wrong')&quot;);
+}
+catch (LuauException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spxnso/LuauInterop/blob/master/docs/docs/quickstart.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

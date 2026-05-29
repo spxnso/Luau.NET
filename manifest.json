@@ -1,0 +1,498 @@
+{
+  "source_base_path": "/home/runner/work/LuauInterop/LuauInterop/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Compilation.LuauCompileOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Compilation.LuauCompileOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Compilation.LuauCompileOptions",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Compilation.LuauCompileOptions.yml\" sourcestartlinenumber=\"1\">Represents the options for compiling a Luau chunk.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Compilation.LuauCompiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Compilation.LuauCompiler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Compilation.LuauCompiler",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Compilation.LuauCompiler.yml\" sourcestartlinenumber=\"1\">Provides functionality to compile Luau source code into bytecode chunks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Compilation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Compilation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Compilation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Luau.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Luau.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Luau",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Luau.yml\" sourcestartlinenumber=\"1\">Represents a Luau instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.LuauBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.LuauBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.LuauBase",
+      "Summary": "<p sourcefile=\"api/LuauInterop.LuauBase.yml\" sourcestartlinenumber=\"1\">Base class for all Luau objects that hold a reference to the Lua state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.LuauChunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.LuauChunk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.LuauChunk",
+      "Summary": "<p sourcefile=\"api/LuauInterop.LuauChunk.yml\" sourcestartlinenumber=\"1\">Represents a compiled Luau chunk, which is a block of bytecode that can be loaded into a Lua State.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.LuauException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.LuauException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.LuauException",
+      "Summary": "<p sourcefile=\"api/LuauInterop.LuauException.yml\" sourcestartlinenumber=\"1\">Represents an exception that occurs during Luau compilation or execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.LuauType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.LuauType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.LuauType",
+      "Summary": "<p sourcefile=\"api/LuauInterop.LuauType.yml\" sourcestartlinenumber=\"1\">Represents the type of a Lua value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.LuauValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.LuauValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.LuauValue",
+      "Summary": "<p sourcefile=\"api/LuauInterop.LuauValue.yml\" sourcestartlinenumber=\"1\">Represents a raw Luau value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Native.LuaConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Native.LuaConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Native.LuaConstants",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Native.LuaConstants.yml\" sourcestartlinenumber=\"1\">Static class containing constants used in the Luau C API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Native.LuaState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Native.LuaState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Native.LuaState",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Native.LuaState.yml\" sourcestartlinenumber=\"1\">Represents a Lua state. This is a thin wrapper around the native lua_State pointer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Native.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Native.NativeMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Native.NativeMethods",
+      "Summary": "<p sourcefile=\"api/LuauInterop.Native.NativeMethods.yml\" sourcestartlinenumber=\"1\">Class containing P/Invoke signatures for the Luau C API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Native.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Native",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.LuauBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.LuauBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects.LuauBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.LuauFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.LuauFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects.LuauFunction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.LuauTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.LuauTable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects.LuauTable",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.LuauUserData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.LuauUserData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects.LuauUserData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.LuauVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.LuauVector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects.LuauVector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Objects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Objects.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Objects",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Runtime.LuauCoStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Runtime.LuauCoStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Runtime.LuauCoStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Runtime.LuauGCOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Runtime.LuauGCOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Runtime.LuauGCOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Runtime.LuauStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Runtime.LuauStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Runtime.LuauStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Runtime.LuauThread.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Runtime.LuauThread.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Runtime.LuauThread",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.Runtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop.Runtime",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LuauInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LuauInterop.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LuauInterop",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/compilation.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/compilation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/disposables.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/disposables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/quickstart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "docs/toc.json"
+        },
+        ".html": {
+          "relative_path": "docs/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/values.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/values.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon-200x200.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon-200x200.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon-32x32.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon-32x32.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon-500x500.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon-500x500.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
