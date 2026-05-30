@@ -26,20 +26,20 @@ public static class LuauCompiler
 
         byte[] sourceBytes = Encoding.UTF8.GetBytes(chunk);
 
-        IntPtr sourcePtr = Marshal.AllocHGlobal(sourceBytes.Length);
+        nint sourcePtr = Marshal.AllocHGlobal(sourceBytes.Length);
         try
         {
             Marshal.Copy(sourceBytes, 0, sourcePtr, sourceBytes.Length);
 
             using var nativeOptions = new NativeCompileOptions(options);
 
-            IntPtr bytecode = NativeMethods.luau_compile(
+            nint bytecode = NativeMethods.luau_compile(
                 sourcePtr,
-                (UIntPtr)sourceBytes.Length,
+                (nuint)sourceBytes.Length,
                 nativeOptions.Pointer,
-                out UIntPtr outSize);
+                out nuint outSize);
 
-            if (bytecode == IntPtr.Zero)
+            if (bytecode == nint.Zero)
                 throw new LuauException("Compilation failed: luau_compile returned null.");
 
             
@@ -73,22 +73,22 @@ public static class LuauCompiler
         public int DebugLevel;
         public int TypeInfoLevel;
         public int CoverageLevel;
-        // IntPtr fields below are reserved for future use.
+        // nint fields below are reserved for future use.
         // IMPORTANT: if any of these become managed types, update StructureToPtr call accordingly.
-        public IntPtr VectorLib;
-        public IntPtr VectorCtor;
-        public IntPtr VectorType;
-        public IntPtr MutableGlobals;
-        public IntPtr UserdataTypes;
-        public IntPtr LibrariesWithKnownMembers;
-        public IntPtr LibraryMemberTypeCb;
-        public IntPtr LibraryMemberConstantCb;
-        public IntPtr DisabledBuiltins;
+        public nint VectorLib;
+        public nint VectorCtor;
+        public nint VectorType;
+        public nint MutableGlobals;
+        public nint UserdataTypes;
+        public nint LibrariesWithKnownMembers;
+        public nint LibraryMemberTypeCb;
+        public nint LibraryMemberConstantCb;
+        public nint DisabledBuiltins;
     }
 
     private sealed class NativeCompileOptions : IDisposable
     {
-        public IntPtr Pointer { get; private set; }
+        public nint Pointer { get; private set; }
 
         public NativeCompileOptions(LuauCompileOptions options)
         {
@@ -109,10 +109,10 @@ public static class LuauCompiler
 
         public void Dispose()
         {
-            if (Pointer != IntPtr.Zero)
+            if (Pointer != nint.Zero)
             {
                 Marshal.FreeHGlobal(Pointer);
-                Pointer = IntPtr.Zero;
+                Pointer = nint.Zero;
             }
         }
     }

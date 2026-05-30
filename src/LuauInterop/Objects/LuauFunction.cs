@@ -29,7 +29,7 @@ public sealed class LuauFunction(Luau owner, int reference) : LuauBase(owner, re
             }
 
             int resultCount = Owner.State.GetTop() - stackBase;
-            var results = new List<object?>();
+            var results = new List<object?>(resultCount);
 
             try
             {

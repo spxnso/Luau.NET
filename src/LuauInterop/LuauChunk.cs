@@ -8,17 +8,17 @@ namespace LuauInterop;
 /// <summary>
 /// Represents a compiled Luau chunk, which is a block of bytecode that can be loaded into a Lua State.
 /// </summary>
-public class LuauChunk(IntPtr pointer, UIntPtr size) : IDisposable
+public class LuauChunk(nint pointer, nuint size) : IDisposable
 {
     /// <summary>
     /// The pointer to the compiled chunk in unmanaged memory.
     /// </summary>
-    public IntPtr Pointer { get; private set; } = pointer;
+    public nint Pointer { get; private set; } = pointer;
 
     /// <summary>
     /// The size of the compiled chunk in bytes.
     /// </summary>
-    public UIntPtr Size { get; } = size;
+    public nuint Size { get; } = size;
 
     public bool IsDisposed { get; private set; }
 
@@ -38,10 +38,10 @@ public class LuauChunk(IntPtr pointer, UIntPtr size) : IDisposable
         if (IsDisposed)
             return;
 
-        if (Pointer != IntPtr.Zero)
+        if (Pointer != nint.Zero)
         {
             NativeMethods.luau_free(Pointer);
-            Pointer = IntPtr.Zero;
+            Pointer = nint.Zero;
         }
 
         IsDisposed = true;

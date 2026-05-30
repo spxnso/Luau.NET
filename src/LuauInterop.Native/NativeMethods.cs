@@ -2,7 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-using lua_State = System.IntPtr;
+using lua_State = nint;
 
 namespace LuauInterop.Native;
 
@@ -16,7 +16,7 @@ public static partial class NativeMethods
     #region State manipulation
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial lua_State lua_newstate(IntPtr f, IntPtr ud);
+    public static partial lua_State lua_newstate(nint f, nint ud);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -117,7 +117,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_typename(lua_State L, int tp);
+    public static partial nint lua_typename(lua_State L, int tp);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -145,7 +145,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tovector(lua_State L, int idx);
+    public static partial nint lua_tovector(lua_State L, int idx);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -157,19 +157,19 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tolstring(lua_State L, int idx, out UIntPtr len);
+    public static partial nint lua_tolstring(lua_State L, int idx, out nuint len);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tostringatom(lua_State L, int idx, out int atom);
+    public static partial nint lua_tostringatom(lua_State L, int idx, out int atom);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tolstringatom(lua_State L, int idx, out UIntPtr len, out int atom);
+    public static partial nint lua_tolstringatom(lua_State L, int idx, out nuint len, out int atom);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_namecallatom(lua_State L, out int atom);
+    public static partial nint lua_namecallatom(lua_State L, out int atom);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -177,23 +177,23 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tocfunction(lua_State L, int idx);
+    public static partial nint lua_tocfunction(lua_State L, int idx);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tolightuserdata(lua_State L, int idx);
+    public static partial nint lua_tolightuserdata(lua_State L, int idx);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tolightuserdatatagged(lua_State L, int idx, int tag);
+    public static partial nint lua_tolightuserdatatagged(lua_State L, int idx, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_touserdata(lua_State L, int idx);
+    public static partial nint lua_touserdata(lua_State L, int idx);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_touserdatatagged(lua_State L, int idx, int tag);
+    public static partial nint lua_touserdatatagged(lua_State L, int idx, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -209,11 +209,11 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_tobuffer(lua_State L, int idx, out UIntPtr len);
+    public static partial nint lua_tobuffer(lua_State L, int idx, out nuint len);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_topointer(lua_State L, int idx);
+    public static partial nint lua_topointer(lua_State L, int idx);
     #endregion
 
     #region Push functions (C -> stack)
@@ -243,7 +243,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_pushlstring(lua_State L, string s, UIntPtr l);
+    public static partial void lua_pushlstring(lua_State L, string s, nuint l);
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -251,14 +251,14 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_pushvfstring(lua_State L, string fmt, IntPtr argp);
+    public static partial nint lua_pushvfstring(lua_State L, string fmt, nint argp);
 
     [DllImport(LuauLibraryName, CallingConvention = CallingConvention.Cdecl)]
-    public static extern IntPtr lua_pushfstringL(lua_State L, string fmt, __arglist);
+    public static extern nint lua_pushfstringL(lua_State L, string fmt, __arglist);
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_pushcclosurek(lua_State L, IntPtr fn, string debugname, int nup, IntPtr cont);
+    public static partial void lua_pushcclosurek(lua_State L, nint fn, string debugname, int nup, nint cont);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -270,23 +270,23 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_pushlightuserdatatagged(lua_State L, IntPtr p, int tag);
+    public static partial void lua_pushlightuserdatatagged(lua_State L, nint p, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_newuserdatatagged(lua_State L, UIntPtr sz, int tag);
+    public static partial nint lua_newuserdatatagged(lua_State L, nuint sz, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_newuserdatataggedwithmetatable(lua_State L, UIntPtr sz, int tag);
+    public static partial nint lua_newuserdatataggedwithmetatable(lua_State L, nuint sz, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_newuserdatadtor(lua_State L, UIntPtr sz, IntPtr dtor);
+    public static partial nint lua_newuserdatadtor(lua_State L, nuint sz, nint dtor);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_newbuffer(lua_State L, UIntPtr sz);
+    public static partial nint lua_newbuffer(lua_State L, nuint sz);
     #endregion
 
     #region Get functions (Lua -> stack)
@@ -312,7 +312,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial int lua_rawgetptagged(lua_State L, int idx, IntPtr p, int tag);
+    public static partial int lua_rawgetptagged(lua_State L, int idx, nint p, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -362,7 +362,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_rawsetptagged(lua_State L, int idx, IntPtr p, int tag);
+    public static partial void lua_rawsetptagged(lua_State L, int idx, nint p, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -376,7 +376,7 @@ public static partial class NativeMethods
     #region Load and Call functions
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial int luau_load(lua_State L, string chunkname, IntPtr data, UIntPtr size, int env);
+    public static partial int luau_load(lua_State L, string chunkname, nint data, nuint size, int env);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -388,7 +388,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial int lua_cpcall(lua_State L, IntPtr func, IntPtr ud);
+    public static partial int lua_cpcall(lua_State L, nint func, nint ud);
     #endregion
 
     #region Coroutine functions
@@ -418,11 +418,11 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getthreaddata(lua_State L);
+    public static partial nint lua_getthreaddata(lua_State L);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_setthreaddata(lua_State L, IntPtr data);
+    public static partial void lua_setthreaddata(lua_State L, nint data);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -442,7 +442,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial UIntPtr lua_totalbytes(lua_State L, int category);
+    public static partial nuint lua_totalbytes(lua_State L, int category);
     #endregion
 
     #region Miscellaneous functions
@@ -464,7 +464,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial UIntPtr lua_encodepointer(lua_State L, UIntPtr p);
+    public static partial nuint lua_encodepointer(lua_State L, nuint p);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -476,11 +476,11 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_setuserdatadtor(lua_State L, int tag, IntPtr dtor);
+    public static partial void lua_setuserdatadtor(lua_State L, int tag, nint dtor);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getuserdatadtor(lua_State L, int tag);
+    public static partial nint lua_getuserdatadtor(lua_State L, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -492,31 +492,31 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial int lua_registeruserdatadirectaccess(lua_State L, int tag, IntPtr get, IntPtr set, IntPtr namecall);
+    public static partial int lua_registeruserdatadirectaccess(lua_State L, int tag, nint get, nint set, nint namecall);
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_registeruserdatadirectfieldget(lua_State L, int tag, string field, IntPtr fn);
+    public static partial void lua_registeruserdatadirectfieldget(lua_State L, int tag, string field, nint fn);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_userdatadirectfield_setnumber(IntPtr result, double n);
+    public static partial void lua_userdatadirectfield_setnumber(nint result, double n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_userdatadirectfield_setvector(IntPtr result, float x, float y, float z);
+    public static partial void lua_userdatadirectfield_setvector(nint result, float x, float y, float z);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_userdatadirectfield_setboolean(IntPtr result, int b);
+    public static partial void lua_userdatadirectfield_setboolean(nint result, int b);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_userdatadirectfield_setinteger64(IntPtr result, long n);
+    public static partial void lua_userdatadirectfield_setinteger64(nint result, long n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_userdatadirectfield_setnil(IntPtr result);
+    public static partial void lua_userdatadirectfield_setnil(nint result);
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -524,7 +524,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getlightuserdataname(lua_State L, int tag);
+    public static partial nint lua_getlightuserdataname(lua_State L, int tag);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -540,7 +540,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getallocf(lua_State L, out IntPtr ud);
+    public static partial nint lua_getallocf(lua_State L, out nint ud);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -558,7 +558,7 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial int lua_getinfo(lua_State L, int level, string what, IntPtr ar);
+    public static partial int lua_getinfo(lua_State L, int level, string what, nint ar);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -566,19 +566,19 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getlocal(lua_State L, int level, int n);
+    public static partial nint lua_getlocal(lua_State L, int level, int n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_setlocal(lua_State L, int level, int n);
+    public static partial nint lua_setlocal(lua_State L, int level, int n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_getupvalue(lua_State L, int funcindex, int n);
+    public static partial nint lua_getupvalue(lua_State L, int funcindex, int n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_setupvalue(lua_State L, int funcindex, int n);
+    public static partial nint lua_setupvalue(lua_State L, int funcindex, int n);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -590,20 +590,20 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_getcoverage(lua_State L, int funcindex, IntPtr context, IntPtr callback);
+    public static partial void lua_getcoverage(lua_State L, int funcindex, nint context, nint callback);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void lua_getcounters(lua_State L, int funcindex, IntPtr context, IntPtr functionvisit, IntPtr countervisit);
+    public static partial void lua_getcounters(lua_State L, int funcindex, nint context, nint functionvisit, nint countervisit);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr lua_debugtrace(lua_State L);
+    public static partial nint lua_debugtrace(lua_State L);
     #endregion
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr luaL_newstate();
+    public static partial nint luaL_newstate();
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
@@ -611,11 +611,11 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial IntPtr luau_compile(IntPtr source, UIntPtr size, IntPtr options, out UIntPtr outsize);
+    public static partial nint luau_compile(nint source, nuint size, nint options, out nuint outsize);
 
     [LibraryImport(LuauLibraryName)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void luau_free(IntPtr ptr);
+    public static partial void luau_free(nint ptr);
     #region Library functions
 
     [LibraryImport(LuauLibraryName)]
@@ -689,5 +689,5 @@ public static partial class NativeMethods
 
     [LibraryImport(LuauLibraryName, StringMarshalling = StringMarshalling.Utf8)]
     [UnmanagedCallConv(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static partial void luau_pushcsharpfunc(IntPtr state, IntPtr fnPtr);
+    public static partial void luau_pushcsharpfunc(nint state, nint fnPtr);
 }
