@@ -14,7 +14,7 @@ public sealed class LuauTable(Luau owner, int reference) : LuauBase(owner, refer
             {
                 PushReference();
                 Owner.State.GetField(-1, key);
-                return Owner.GetObject(-1);
+                return Owner.GetObject(-1, Owner.State);
             }
             finally
             {
@@ -28,7 +28,7 @@ public sealed class LuauTable(Luau owner, int reference) : LuauBase(owner, refer
             try
             {
                 PushReference();
-                Owner.PushObject(value);
+                Owner.PushObject(value, Owner.State);
                 Owner.State.SetField(-2, key);
             }
             finally
@@ -48,7 +48,7 @@ public sealed class LuauTable(Luau owner, int reference) : LuauBase(owner, refer
             {
                 PushReference();
                 Owner.State.RawGetI(-1, key);
-                return Owner.GetObject(-1);
+                return Owner.GetObject(-1, Owner.State);
             }
             finally
             {
@@ -62,7 +62,7 @@ public sealed class LuauTable(Luau owner, int reference) : LuauBase(owner, refer
             try
             {
                 PushReference();
-                Owner.PushObject(value);
+                Owner.PushObject(value, Owner.State);
                 Owner.State.RawSetI(-2, key);
             }
             finally
@@ -104,8 +104,8 @@ public sealed class LuauTable(Luau owner, int reference) : LuauBase(owner, refer
 
             while (Owner.State.Next(-2) != 0)
             {
-                object? key = Owner.GetObject(-2);
-                object? value = Owner.GetObject(-1);
+                object? key = Owner.GetObject(-2, Owner.State);
+                object? value = Owner.GetObject(-1, Owner.State);
 
                 if (key is not null)
                     results.Add(new KeyValuePair<object, object?>(key, value));

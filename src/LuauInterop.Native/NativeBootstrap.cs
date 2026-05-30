@@ -12,10 +12,10 @@ static partial class NativeMethods
         NativeLibrary.SetDllImportResolver(typeof(NativeMethods).Assembly, DllImportResolver);
     }
 
-    static IntPtr DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
+    static nint DllImportResolver(string libraryName, Assembly assembly, DllImportSearchPath? searchPath)
     {
         if (libraryName != LibraryName)
-            return IntPtr.Zero;
+            return nint.Zero;
 
         string platformName = GetPlatformFileName();
 

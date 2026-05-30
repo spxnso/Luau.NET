@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Text;
 
 using LuauInterop.Compilation;
@@ -47,7 +48,7 @@ public class Luau : IDisposable
             try
             {
                 LuauType type = (LuauType)State.GetGlobal(name);
-                return GetObject(-1);
+                return GetObject(-1, State);
             }
             finally
             {
@@ -57,7 +58,7 @@ public class Luau : IDisposable
         set
         {
             ThrowIfDisposed();
-            PushObject(value);
+            PushObject(value, State);
             State.SetGlobal(name);
         }
     }
@@ -205,7 +206,6 @@ public class Luau : IDisposable
     /// <inheritdoc cref="OpenLibraries"/>
     public int OpenVector() => State.OpenVector();
 
-
     /// <summary>
     /// Pops <paramref name="n"/> values off the top of the stack.
     /// </summary>
@@ -258,8 +258,8 @@ public class Luau : IDisposable
             case LuauType.Number: return State.ToNumber(index);
             case LuauType.Integer: return State.ToInteger64(index, out _);
             case LuauType.String:
-                IntPtr ptr = State.ToLString(index, out UIntPtr len);
-                string? s = ptr == IntPtr.Zero ? null : Marshal.PtrToStringUTF8(ptr, (int)len);
+                nint ptr = State.ToLString(index, out nuint len);
+                string? s = ptr == nint.Zero ? null : Marshal.PtrToStringUTF8(ptr, (int)len);
                 return new LuauValue(LuauType.String, number: 0, integer: 0, reference: s);
             case LuauType.Function:
                 return new LuauValue(LuauType.Function, number: State.Ref(index), integer: 0, reference: this);
@@ -278,7 +278,7 @@ public class Luau : IDisposable
         ThrowIfDisposed();
         NativeMethods.luau_setfflag(name, enabled ? 1 : 0);
     }
-    
+
     internal object?[] CollectResults(int stackBase)
     {
         int count = State.GetTop() - stackBase;
@@ -287,7 +287,7 @@ public class Luau : IDisposable
         try
         {
             for (int i = 0; i < count; i++)
-                results[i] = GetObject(stackBase + i + 1);
+                results[i] = GetObject(stackBase + i + 1, State);
         }
         finally
         {
@@ -296,8 +296,6 @@ public class Luau : IDisposable
 
         return results;
     }
-
-    internal object? GetObject(int index) => GetObject(index, State);
 
     internal object? GetObject(int index, LuaState state)
     {
@@ -313,8 +311,8 @@ public class Luau : IDisposable
             LuauType.Function => new LuauFunction(this, state.Ref(index)),
             LuauType.Table => new LuauTable(this, state.Ref(index)),
             LuauType.UserData => new LuauUserData(this, state.Ref(index)),
-            LuauType.Vector => ReadVector(index),
-            LuauType.Buffer => ReadBuffer(index),
+            LuauType.Vector => ReadVector(index, state),
+            LuauType.Buffer => ReadBuffer(index, state),
             LuauType.Thread => new LuauThread(this, state.Ref(index)),
             _ => throw new NotSupportedException($"Unsupported Luau type: {type}")
         };
@@ -327,8 +325,8 @@ public class Luau : IDisposable
 
         try
         {
-            IntPtr ptr = State.ToLString(State.AbsIndex(-1), out _);
-            if (ptr != IntPtr.Zero)
+            nint ptr = State.ToLString(State.AbsIndex(-1), out _);
+            if (ptr != nint.Zero)
                 message = Marshal.PtrToStringUTF8(ptr) ?? message;
         }
         finally
@@ -338,8 +336,6 @@ public class Luau : IDisposable
 
         return message;
     }
-
-    internal void PushObject(object? value) => PushObject(value, State);
 
     internal void PushObject(object? value, LuaState state)
     {
@@ -351,14 +347,14 @@ public class Luau : IDisposable
                 luauBase.PushReference();
                 break;
 
-            case LuauVector vector:
+            case Vector3 vector:
                 state.PushVector(vector.X, vector.Y, vector.Z);
                 break;
 
-            case LuauBuffer buffer:
-                IntPtr ptr = state.NewBuffer((UIntPtr)buffer.Length);
+            case byte[] buffer:
+                nint ptr = state.NewBuffer((nuint)buffer.Length);
                 if (buffer.Length > 0)
-                    Marshal.Copy(buffer.Data, 0, ptr, buffer.Length);
+                    Marshal.Copy(buffer, 0, ptr, buffer.Length);
                 break;
 
             default:
@@ -366,8 +362,6 @@ public class Luau : IDisposable
                 break;
         }
     }
-
-    internal void PushValue(LuauValue value) => PushValue(value, State);
 
     internal void PushValue(LuauValue value, LuaState state)
     {
@@ -434,13 +428,11 @@ public class Luau : IDisposable
         };
     }
 
-    private LuauBuffer ReadBuffer(int index) => ReadBuffer(index, State);
-
-    private LuauBuffer ReadBuffer(int index, LuaState state)
+    private byte[] ReadBuffer(int index, LuaState state)
     {
-        IntPtr ptr = state.ToBuffer(index, out UIntPtr len);
-        if (ptr == IntPtr.Zero || len == UIntPtr.Zero)
-            return new LuauBuffer([]);
+        nint ptr = state.ToBuffer(index, out nuint len);
+        if (ptr == nint.Zero || len == nuint.Zero)
+            throw new InvalidDataException("Object at index is not a valid Luau buffer.");
 
         if (len.ToUInt64() > int.MaxValue)
             throw new OverflowException("Luau buffer too large for managed array.");
@@ -448,18 +440,17 @@ public class Luau : IDisposable
         int length = (int)len.ToUInt64();
         byte[] data = new byte[length];
         Marshal.Copy(ptr, data, 0, length);
-        return new LuauBuffer(data);
+        return data;
     }
 
-    private LuauVector ReadVector(int index) => ReadVector(index, State);
-
-    private LuauVector ReadVector(int index, LuaState state)
+    private Vector3 ReadVector(int index, LuaState state)
     {
-        IntPtr ptr = state.ToVector(index);
-        if (ptr == IntPtr.Zero) return default;
+        nint ptr = state.ToVector(index);
+        if (ptr == nint.Zero)
+            throw new InvalidDataException("Object at index is not a valid Luau vector.");
 
         float[] values = new float[3];
         Marshal.Copy(ptr, values, 0, 3);
-        return new LuauVector(values[0], values[1], values[2]);
+        return new Vector3(values[0], values[1], values[2]);
     }
 }

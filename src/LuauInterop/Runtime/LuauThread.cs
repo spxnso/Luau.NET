@@ -52,7 +52,7 @@ public sealed class LuauThread(Luau owner, int reference) : LuauBase(owner, refe
         if (args.Length == 0) return;
 
         foreach (var arg in args)
-            Owner.PushObject(arg);
+            Owner.PushObject(arg, Owner.State);
 
         Owner.State.XMove(co, args.Length);
     }
@@ -73,8 +73,8 @@ public sealed class LuauThread(Luau owner, int reference) : LuauBase(owner, refe
 
     private static string GetErrorMessage(LuaState coroutine)
     {
-        IntPtr ptr = coroutine.ToLString(-1, out _);
-        return ptr != IntPtr.Zero ? Marshal.PtrToStringUTF8(ptr) ?? "Unknown coroutine error" : "Unknown coroutine error";
+        nint ptr = coroutine.ToLString(-1, out _);
+        return ptr != nint.Zero ? Marshal.PtrToStringUTF8(ptr) ?? "Unknown coroutine error" : "Unknown coroutine error";
     }
 
     private void ThrowLastError(LuaState coroutine)

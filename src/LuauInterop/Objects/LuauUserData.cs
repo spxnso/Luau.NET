@@ -4,7 +4,7 @@ namespace LuauInterop.Objects;
 
 public sealed class LuauUserData(Luau owner, int reference) : LuauBase(owner, reference)
 {
-    public IntPtr Pointer
+    public nint Pointer
     {
         get
         {
@@ -44,8 +44,8 @@ public sealed class LuauUserData(Luau owner, int reference) : LuauBase(owner, re
     {
         ThrowIfDisposed();
 
-        IntPtr ptr = Pointer;
-        if (ptr == IntPtr.Zero)
+        nint ptr = Pointer;
+        if (ptr == nint.Zero)
             throw new InvalidOperationException("Userdata pointer is null.");
 
         if (Marshal.SizeOf<T>() > int.MaxValue)

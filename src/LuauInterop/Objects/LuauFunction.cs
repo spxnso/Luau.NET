@@ -17,7 +17,7 @@ public sealed class LuauFunction(Luau owner, int reference) : LuauBase(owner, re
             if (arguments is not null)
             {
                 foreach (var arg in arguments)
-                    Owner.PushObject(arg);
+                    Owner.PushObject(arg, Owner.State);
                 argCount = arguments.Length;
             }
 
@@ -29,12 +29,12 @@ public sealed class LuauFunction(Luau owner, int reference) : LuauBase(owner, re
             }
 
             int resultCount = Owner.State.GetTop() - stackBase;
-            var results = new List<object?>();
+            var results = new List<object?>(resultCount);
 
             try
             {
                 for (int i = 0; i < resultCount; i++)
-                    results.Add(Owner.GetObject(stackBase + i + 1));
+                    results.Add(Owner.GetObject(stackBase + i + 1, Owner.State));
             }
             catch
             {
