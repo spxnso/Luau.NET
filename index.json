@@ -92,7 +92,7 @@
   "api/LuauInterop.Objects.html": {
     "href": "api/LuauInterop.Objects.html",
     "title": "Namespace LuauInterop.Objects | LuauInterop",
-    "summary": "Namespace LuauInterop.Objects Classes LuauBuffer LuauFunction LuauTable LuauUserData Structs LuauVector"
+    "summary": "Namespace LuauInterop.Objects Classes LuauFunction LuauTable LuauUserData"
   },
   "api/LuauInterop.Runtime.LuauCallback.NativeDelegate.html": {
     "href": "api/LuauInterop.Runtime.LuauCallback.NativeDelegate.html",
