@@ -4,7 +4,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>LuauInterop.Sandbox</PackageId>
+    <Description>Sandboxing utilities for LuauInterop.</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\LuauInterop.Native\LuauInterop.Native.csproj" />
